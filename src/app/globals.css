@@ -3,24 +3,19 @@
 @tailwind utilities;
 
 
+
 html {
   font-family: var(--font-poppins);
 }
  
-h1,h2,h3,h4,h5,h6 {
-  font-family: var(--font-merriweather);
-  font-weight: 700;
-  
-}
-h2{
-  color: rgba(0, 0, 0, 0.6) !important;
-}
+
+
 
 .btn-colored{
-  @apply border-2 px-[20px] py-[8px] rounded-[10px] text-center bg-purple-900 border-purple-900  text-[#F1F2F8] text-[12px] font-[700]  duration-500 transition transform active:scale-95 focus:outline-none
+  @apply border-2 px-[20px] py-[8px] rounded-[10px] text-center bg-primary border-primary  text-[#F1F2F8] text-[12px] font-[700]  duration-500 transition transform active:scale-95 focus:outline-none
 }
 .btn{
-  @apply  px-[20px] py-[8px] rounded-[10px] text-center bg-white   text-purple-900 text-[12px] font-[700]   duration-500 transition transform active:scale-95 focus:outline-none border border-purple-900
+  @apply  px-[20px] py-[8px] rounded-[10px] text-center bg-white   text-primary text-[12px] font-[700]   duration-500 transition transform active:scale-95 focus:outline-none border border-primary
 }
 .heading-2{
   @apply text-[35px] leading-[1.2em] 
@@ -29,3 +24,6 @@ h2{
   @apply text-[15px] leading-[1.5em]
 }
 
+.swiper{
+  margin: 0 0 0 10px !important;
+}
