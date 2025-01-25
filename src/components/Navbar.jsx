@@ -45,7 +45,7 @@ const Navbar = () => {
     <nav
       className={`${
         isScrolled ? "bg-purple-900" : "bg-transparent"
-      } sticky top-0    h-[70px]   transition-all duration-300 `}
+      } sticky top-0  h-[70px]  lg:h-[50px]   transition-all duration-300 `}
     >
       <div
         className={`flex justify-between mx-auto w-11/12 h-full relative items-center ${
