@@ -11,7 +11,7 @@ const Works = () => {
           </h2>
         </div>
         {/* cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-[40px] lg:gap-[20px]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-[20px] lg:gap-[20px]">
           {/* card 1 */}
           <div className="bg-[#F9FAFB] col-span-1 group p-[20px] rounded-[20px] overflow-hidden hover:bg-primary transition duration-500 ease-in-out">
             <div className="transition transform hover:scale-[105%] duration-500 w-full h-full">
@@ -37,7 +37,7 @@ const Works = () => {
                   Share your idea, your project, and your dream. We’ll help you fund it.
                   </p>
                 </div>
-                <h3 className="text-[18px] group-hover:text-white ">Share Your Vision</h3>
+                <h4 className="heading-4 group-hover:text-white ">Share Your Vision</h4>
               </div>
             </div>
           </div>
@@ -67,7 +67,7 @@ const Works = () => {
                   Blink and you’ll have the funds. We move quickly. Once approved, the funds are in your account and ready to go
                   </p>
                 </div>
-                <h3 className="text-[18px] ">Get Funded Fast</h3>
+                <h3 className="heading-4 mb-2 ">Get Funded Fast</h3>
               </div>
             </div>
           </div>
@@ -98,7 +98,7 @@ const Works = () => {
 
                   </p>
                 </div>
-                <h3 className="text-[18px] group-hover:text-white">Create Your Masterpiece</h3>
+                <h3 className="heading-4 group-hover:text-white mb-2">Create Your Masterpiece</h3>
               </div>
             </div>
           </div>
