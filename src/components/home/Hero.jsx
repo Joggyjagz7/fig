@@ -11,10 +11,11 @@ const Hero = () => {
     <div className="w-full  pt-[140px] pb-[50px] bg-[#EFEFEF]">
       <div className=" lg:grid grid-cols-2 w-10/12 lg:w-11/12 md:w-9/12  mx-auto ">
         <div className=" mt-[30px]  lg:col-span-1 text-center lg:text-start ">
+        <h4 className="heading-4   text-primary-purple  ">Trusted By 100+ Creators</h4>
           <h1
             className={`lg:text-[50px] text-[35px]  leading-[1.1em] font-[700]`}
           >
-            Financing for <span className="text-primary">Influencers </span>  and <span className="text-primary">Creators </span>  in Africa
+            Financing for <span className="text-primary-purple">Influencers </span>  and <span className="text-primary-purple">Creators </span>  in Africa
           </h1>
           <span className="text-[25px] lg:flex hidden ">
             We provide creators and influencers {"    "}
