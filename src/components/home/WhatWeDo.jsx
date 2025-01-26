@@ -45,13 +45,13 @@ const WhatWeDo = () => {
                 key={card.id}
                 className="w-11/12 md:w-auto md:col-span-1 mx-auto text-center rounded-[20px] p-[20px] bg-[#EFEFEF]"
               >
-                <div className="flex justify-center items-center text-[100px] bg-[#d0cbe7] h-[50px] w-[50px] rounded-[50%] mx-auto mb-[20px] text-primary">
+                <div className="flex justify-center items-center text-[100px] bg-accent-light  h-[50px] w-[50px] rounded-[50%] mx-auto mb-[20px] text-primary">
                   {card.img}
                 </div>
                 <div>
-                  <h3 className="text-[18px]  leading-[1.3] lg:leading-[1.2em] mb-[10px] lg:mb-[10px] ">
+                  <h4 className="heading-4 lg:mb-[10px] ">
                     {card.title}
-                  </h3>
+                  </h4>
                   <p className="text-[14px] lg:text-[13px]">{card.desc}</p>
                 </div>
               </div>

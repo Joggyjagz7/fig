@@ -75,7 +75,7 @@ const Works = () => {
           {/* card 3 */}
           <div className="bg-[#F9FAFB] group p-[20px] rounded-[20px] hover:bg-primary transition duration-500 ease-in-out ">
             <div className="transition transform hover:scale-[105%] duration-500 w-full h-full">
-              <div className="flex flex-row-reverse items-center gap-[30px]">
+              <div className="flex flex-row md:flex-row-reverse items-center gap-[30px]">
                 <div className=" ">
                   <Image
                     src="/images/work-3.webp"
