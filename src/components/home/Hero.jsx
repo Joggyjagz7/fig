@@ -12,7 +12,7 @@ const Hero = () => {
       <div className=" lg:grid grid-cols-2 w-10/12 lg:w-11/12 md:w-9/12  mx-auto ">
         <div className=" mt-[30px]  lg:col-span-1 text-center lg:text-start ">
           <h1
-            className={`lg:text-[50px] text-[35px] font-[500] leading-[1.1em] font-[700]`}
+            className={`lg:text-[50px] text-[35px]  leading-[1.1em] font-[700]`}
           >
             Financing for <span className="text-primary">Influencers </span>  and <span className="text-primary">Creators </span>  in Africa
           </h1>
@@ -20,7 +20,7 @@ const Hero = () => {
             We provide creators and influencers {"    "}
             <MySwiper />
           </span>
-          <span className="text-[20px]  lg:text-[25px] lg:hidden  ">
+          <span className="text-[20px] block h-[70px]  lg:hidden  ">
             We provide creators and influencers {"    "}{" "}
             <span className="text-[#050914]">
               <MyTypewriter />
