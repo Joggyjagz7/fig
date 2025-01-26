@@ -44,12 +44,12 @@ const Navbar = () => {
   return (
     <nav
       className={`${
-        isScrolled ? "bg-purple-900" : "bg-transparent"
+        isScrolled ? "bg-primary" : "bg-transparent"
       } sticky top-0  h-[70px]  lg:h-[50px]   transition-all duration-300 `}
     >
       <div
         className={`flex justify-between mx-auto w-11/12 h-full relative items-center ${
-          isScrolled ? " text-white" : "text-purple-900"
+          isScrolled ? " text-white" : "text-primary"
         }`}
       >
         <div className="text-[25px] font-[900]  ">Fig</div>

@@ -1,3 +1,4 @@
+import Choose from "@/components/home/Choose";
 import Hero from "@/components/home/Hero";
 import WhatWeDo from "@/components/home/WhatWeDo";
 import Works from "@/components/home/Works";
@@ -8,6 +9,7 @@ export default function Home() {
     <main className="">
       <Hero />
      <WhatWeDo />
+     <Choose />
      <Works />
      
     </main>
