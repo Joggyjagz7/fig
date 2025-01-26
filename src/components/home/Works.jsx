@@ -11,9 +11,9 @@ const Works = () => {
           </h2>
         </div>
         {/* cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-[20px] lg:gap-[20px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-[20px] md:w-9/12 md:mx-auto lg:gap-[20px]">
           {/* card 1 */}
-          <div className="bg-[#F9FAFB] col-span-1 group p-[20px] rounded-[20px] overflow-hidden hover:bg-primary transition duration-500 ease-in-out">
+          <div className="bg-[#F9FAFB] col-span-1 group p-[20px] rounded-[20px] overflow-hidden hover:bg-primary-purple transition duration-500 ease-in-out">
             <div className="transition transform hover:scale-[105%] duration-500 w-full h-full">
               <div className="flex items-center gap-[30px]">
                 <div className=" ">
@@ -73,7 +73,7 @@ const Works = () => {
           </div>
 
           {/* card 3 */}
-          <div className="bg-[#F9FAFB] group p-[20px] rounded-[20px] hover:bg-primary transition duration-500 ease-in-out ">
+          <div className="bg-[#F9FAFB] group p-[20px] rounded-[20px] hover:bg-primary-purple transition duration-500 ease-in-out ">
             <div className="transition transform hover:scale-[105%] duration-500 w-full h-full">
               <div className="flex flex-row md:flex-row-reverse items-center gap-[30px]">
                 <div className=" ">
@@ -99,6 +99,38 @@ const Works = () => {
                   </p>
                 </div>
                 <h3 className="heading-4 group-hover:text-white mb-2">Create Your Masterpiece</h3>
+              </div>
+            </div>
+          </div>
+
+
+          {/* card 4 */}
+          <div className="bg-[#F9FAFB] group p-[20px] rounded-[20px] hover:bg-primary-purple transition duration-500 ease-in-out ">
+            <div className="transition transform hover:scale-[105%] duration-500 w-full h-full">
+              <div className="flex flex-row md:flex-row items-center gap-[30px]">
+                <div className=" ">
+                  <Image
+                    src="/images/work-4.webp"
+                    alt="Share Your Vision"
+                    width={500}
+                    height={500}
+                    className="rounded-[20px] "
+                  />
+                </div>
+                <h2
+                  className={`text-[40px] text-accent-light ${merriweather.className}`}
+                >
+                  04
+                </h2>
+              </div>
+              <div className="mt-[20px] flex flex-col-reverse ">
+                <div className="flex justify-end mb-[10px]">
+                  <p className="text-[13px] leading-[1.3em] text-gray-500 w-9/12 group-hover:text-white">
+                  Pay us back when the cash starts flowing. We work with flexible payment options.
+
+                  </p>
+                </div>
+                <h3 className="heading-4 group-hover:text-white mb-2">Repay Own Your Terms</h3>
               </div>
             </div>
           </div>

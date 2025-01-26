@@ -26,3 +26,35 @@ export const CardDetails = [
         desc: "From promoting your work to investing in courses that sharpen your skills, Fig Finance helps you stay ahead in a competitive creative world"
     },
 ]
+export const TestimonialData = [
+    {
+        image: "/images/step-1.webp",
+        title: "Influencer",
+        name: " Igo, Lifestyle ",
+        desc: "Fig Finance helped me fund my first big campaign, and it changed everything for my brand. The process was so smooth!"
+    },
+    {
+        image: "/images/step-1.webp",
+        title: "Filmmakerr",
+        name: " Petra, ",
+        desc: "I needed funds to shoot my YouTube movie, and Fig Finance delivered. My project is live, and the response has been amazing."
+    },
+    {
+        image: "/images/step-1.webp",
+        title: " Content Creator",
+        name: " Nanabo, ",
+        desc: "As a creator, finding financial support can be hard, but Fig Finance had my back. I leveled up my content and closed a big deal!"
+    },
+    {
+        image: "/images/step-1.webp",
+        title: "Fitness Influncer",
+        name: " Mason Griffin  ",
+        desc: "Launching my fitness app seemed impossible without funding. Fig gave me the push I needed, and now my app is helping thousands. They truly empower creators!"
+    },
+    {
+        image: "/images/step-1.webp",
+        title: "Influencer",
+        name: " Emma Lewis ",
+        desc: "Fig has been a blessing. They saw potential in my idea when no bank would even listen. I’m now a full-time influencer thanks to their trust in me"
+    },
+]

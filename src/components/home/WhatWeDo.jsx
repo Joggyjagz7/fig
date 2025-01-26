@@ -25,7 +25,7 @@ const WhatWeDo = () => {
       <div className="lg:my-[10px] lg:w-10/13 w-11/12  py-[50px] mx-auto ">
         <div className=" h-full ">
           <div className="flex flex-col justify-center lg:w-1/2 lg:mx-auto ">
-          <h4 className="heading-4 text-center  text-primary  ">What We Do</h4>
+          <h4 className="heading-4 text-center  text-primary-purple  ">What We Do</h4>
             <h2
               className={`heading-2 text-center mb-[20px] font-[700]  `}
             >
@@ -45,7 +45,7 @@ const WhatWeDo = () => {
                 key={card.id}
                 className="w-11/12 md:w-auto md:col-span-1 mx-auto text-center rounded-[20px] p-[20px] bg-[#EFEFEF]"
               >
-                <div className="flex justify-center items-center text-[100px] bg-accent-light  h-[50px] w-[50px] rounded-[50%] mx-auto mb-[20px] text-primary">
+                <div className="flex justify-center items-center text-[100px] bg-accent-light  h-[50px] w-[50px] rounded-[50%] mx-auto mb-[20px] text-primary-purple">
                   {card.img}
                 </div>
                 <div>
