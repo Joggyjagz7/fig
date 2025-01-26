@@ -1,4 +1,4 @@
-import {Merriweather, Poppins} from "next/font/google"
+import {Merriweather, Poppins, Inter_Tight} from "next/font/google"
 
 export const merriweather = Merriweather({
   subsets: ['latin'],
@@ -9,5 +9,10 @@ export const merriweather = Merriweather({
 export const poppins = Poppins({
     subsets: ['latin'],
     weight: ['400'], // Select weights as needed
+    style: ['normal', 'italic'], // Optional styles
+  });
+export const inter = Inter_Tight({
+    subsets: ['latin'],
+    weight: ['400', "700"], // Select weights as needed
     style: ['normal', 'italic'], // Optional styles
   });

@@ -1,7 +1,7 @@
 "use client";
 
 import { EffectCoverflow, Autoplay } from "swiper/modules";
-import { merriweather } from "@/app/fonts";
+import { inter, merriweather } from "@/app/fonts";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
@@ -19,50 +19,42 @@ const style = {
 const WhatWeDo = () => {
   return (
     <section className="w-full  ">
-         <div className="relative h-[70px] w-full ">
+      <div className="relative h-[70px] w-full ">
         <Image src="/images/wave.svg" alt="" fill objectFit="cover" />
       </div>
-      <div className="lg:grid grid-cols-2 gap-[40px] my-[60px] shadow-lg shadow-[rgb(227,220,239)] w-10/12  border-[#3A4262] border-l-0 rounded-[50px] py-[50px] px-[30px] mx-auto ">
-        <div className="lg:col-span-1 flex flex-col justify-center w-full relative">
-          <div
-            style={style}
-            className="absolute top-0 w-full h-full pointer-events-none  "
-          />
-          <Swiper
-            spaceBetween={20}
-            // direction={'vertical'}
-            centeredSlides={true}
-            loop={true}
-            slidesPerView={1.4}
-            autoplay={{
-              delay: 5000,
-              disableOnInteraction: false,
-            }}
-            modules={[EffectCoverflow, Autoplay]}
-            className="mySwiper z-0 w-full h-full "
-          >
-            {CardDetails.map((card) => (
-              <SwiperSlide key={card.id}>
-                <Card {...card} />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
-        <div className="lg:col-span-1  h-full">
-          <div className=" h-full flex flex-col   justify-center">
-            <h2 className={`heading-2 mb-[20px] ${merriweather.className}`}>
+      <div className="lg:my-[60px] lg:w-10/13 w-11/12  py-[50px] mx-auto ">
+        <div className=" h-full ">
+          <div className="flex flex-col justify-center lg:w-1/2 lg:mx-auto ">
+            <h2
+              className={`heading-2 text-center mb-[20px] font-[700]  `}
+            >
               For Creators and Influencers Who Dream Big
             </h2>
-            <p className="parapraph">
+            <p className="parapraph text-center">
               Your creativity knows no boundary. Neither should the resources to
               bring it to life. Fig Finance gives you the financial freedom to
               focus on what matters (your content, your passion, and your
               projects.)
             </p>
-            <div className="mt-[20px]">
+          </div>
 
-          <button className="btn-colored">More Offers</button>
-            </div>
+          <div className="w-full  grid md:grid-cols-2 lg:grid-cols-4  gap-[20px] my-[30px]">
+            {CardDetails.map((card) => (
+              <div
+                key={card.id}
+                className="w-11/12 md:w-auto md:col-span-1 mx-auto text-center rounded-[20px] p-[20px] bg-[#EFEFEF]"
+              >
+                <div className="flex justify-center items-center text-[100px] bg-[#d0cbe7] h-[50px] w-[50px] rounded-[50%] mx-auto mb-[20px] text-primary">
+                  {card.img}
+                </div>
+                <div>
+                  <h3 className="text-[24px] lg:text-[18px] leading-[30px] lg:leading-[1.2em] mb-[15px] lg:mb-[10px] ">
+                    {card.title}
+                  </h3>
+                  <p className="text-[14px] lg:text-[13px]">{card.desc}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

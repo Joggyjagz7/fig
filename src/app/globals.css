@@ -2,10 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-
+:root{
+  --font-h2: inter
+}
 
 html {
   font-family: var(--font-poppins);
+}
+h1,h2,h3{
+  font-family: var(--font-inter);
 }
  
 
@@ -18,10 +23,10 @@ html {
   @apply  px-[20px] py-[8px] rounded-[10px] text-center bg-white   text-primary text-[12px] font-[700]   duration-500 transition transform active:scale-95 focus:outline-none border border-primary
 }
 .heading-2{
-  @apply text-[35px] leading-[1.2em] 
+  @apply lg:text-[40px] text-[30px] leading-[1.2em] 
 }
 .parapraph{
-  @apply text-[15px] leading-[1.5em]
+  @apply lg:text-[15px] text-[16px] lg:leading-[1.5em] leading-[24px]
 }
 
 .swiper{
