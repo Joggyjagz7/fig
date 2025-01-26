@@ -22,9 +22,10 @@ const WhatWeDo = () => {
       <div className="relative h-[70px] w-full ">
         <Image src="/images/wave.svg" alt="" fill objectFit="cover" />
       </div>
-      <div className="lg:my-[60px] lg:w-10/13 w-11/12  py-[50px] mx-auto ">
+      <div className="lg:my-[10px] lg:w-10/13 w-11/12  py-[50px] mx-auto ">
         <div className=" h-full ">
           <div className="flex flex-col justify-center lg:w-1/2 lg:mx-auto ">
+          <h4 className="heading-4 text-center  text-primary  ">What We Do</h4>
             <h2
               className={`heading-2 text-center mb-[20px] font-[700]  `}
             >
@@ -48,7 +49,7 @@ const WhatWeDo = () => {
                   {card.img}
                 </div>
                 <div>
-                  <h3 className="text-[24px] lg:text-[18px] leading-[30px] lg:leading-[1.2em] mb-[15px] lg:mb-[10px] ">
+                  <h3 className="text-[18px]  leading-[1.3] lg:leading-[1.2em] mb-[10px] lg:mb-[10px] ">
                     {card.title}
                   </h3>
                   <p className="text-[14px] lg:text-[13px]">{card.desc}</p>

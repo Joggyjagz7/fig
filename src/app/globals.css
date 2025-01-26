@@ -9,7 +9,7 @@
 html {
   font-family: var(--font-poppins);
 }
-h1,h2,h3{
+h1,h2,h3,h4{
   font-family: var(--font-inter);
 }
  
@@ -23,7 +23,10 @@ h1,h2,h3{
   @apply  px-[20px] py-[8px] rounded-[10px] text-center bg-white   text-primary text-[12px] font-[700]   duration-500 transition transform active:scale-95 focus:outline-none border border-primary
 }
 .heading-2{
-  @apply lg:text-[40px] text-[30px] leading-[1.2em] 
+  @apply lg:text-[40px] text-[25px] leading-[1.2em] font-[700]
+}
+.heading-4{
+  @apply lg:text-[18px] text-[17px] leading-[1.2em] font-[700]
 }
 .parapraph{
   @apply lg:text-[15px] text-[16px] lg:leading-[1.5em] leading-[24px]
