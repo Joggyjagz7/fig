@@ -33,29 +33,39 @@ const WhatWeDo = () => {
       </div> */}
       <div className="lg:my-[10px] lg:w-10/13 w-11/12  lg:pt-[20px] py-[50px] mx-auto ">
         <div className=" h-full ">
-          <div className=" px-[10px]  flex flex-col lg:flex-row  gap-[20px] mx-auto py-[50px] w-11/12 rounded-[20px] ">
+          <div className=" px-[10px]  flex flex-col lg:flex-row  gap-[20px] mx-auto lg:py-[50px] w-full rounded-[20px] ">
             <div className="flex flex-col  md:w-10/12  md:mx-auto justify-center  lg:mx-auto ">
               <motion.h2
-               initial={{ opacity: 0,  }}
-               whileInView={{ opacity: 1, }}
-               transition={{duration:2,delay: 1,  type: "spring", bounce: 0.6 }}
-               viewport={{ once: false, amount: 0.5 }}
+               initial={{ opacity: 0, y: 100  }}
+               whileInView={{ opacity: 1, y: 0}}
+               transition={{duration:1,  type: "spring", bounce: 0.6 }}
+               viewport={{ once: true, amount: 0.5 }}
                 className={`heading-2 text-center lg:text-start font-[700]  `}
               >
                 For Creators and Influencers <br /> Who Dream Big
               </motion.h2>
-              <p className="parapraph text-center lg:text-start">
+              <motion.p
+              initial={{ opacity: 0, y: 100  }}
+              whileInView={{ opacity: 1, y: 0}}
+              transition={{duration:1, delay: 0.5,  type: "spring", bounce: 0.6 }}
+              viewport={{ once: true, amount: 0.5 }}
+              className="parapraph text-center lg:text-start lg:w-[80%]">
                 Your creativity knows no boundary. Neither should the resources
                 to bring it to life.
                 <br /> Fig Finance gives you the financial freedom to focus on
                 what matters (your content, your passion, and your projects.)
-              </p>
-              <div className="mt-[20px] hidden lg:block">
+              </motion.p>
+              <motion.div
+              initial={{ opacity: 0, y: 100  }}
+              whileInView={{ opacity: 1, y: 0}}
+              transition={{duration:1, delay: 1,  type: "spring", bounce: 0.6 }}
+              viewport={{ once: true, amount: 0.5 }}
+              className="mt-[20px] hidden lg:block">
                 <button className="btn gap-2 items-center flex">
                   Learn More
                   <ChevronsRight />
                 </button>
-              </div>
+              </motion.div>
             </div>
             <div className=" w-full    creators-bg ">
               <div className=" h-[300px] md:h-[400px] w-full relative">
@@ -75,9 +85,9 @@ const WhatWeDo = () => {
             </div>
           </div>
 
-          <div className="py-[50px]">
+          <div className="pt-[50px]">
             <h2 className="heading-2 text-center  ">What We Do</h2>
-            <div className="w-full overflow-hidden  grid md:grid-cols-2 lg:grid-cols-4  gap-[20px] my-[30px]">
+            <div className="w-full overflow-hidden  grid md:grid-cols-2 lg:grid-cols-4  gap-[20px] mt-[30px]">
               {CardDetails.map((card) => (
                 <motion.div
                   variants={variants}
