@@ -56,11 +56,10 @@ const Navbar = () => {
         <div
           className={`lg:flex gap-[20px] hidden  text-[13px] font-[500] ${poppins.className} `}
         >
-          <Link href="#">About</Link>
-          <Link href="#">Services</Link>
-          <Link href="#">Showcase</Link>
-          <Link href="#">Resource</Link>
-          <Link href="#">Enterprise</Link>
+          <Link href="#">Products</Link>
+          <Link href="#">Use Cases</Link>
+          <Link href="#">Developers</Link>
+          <Link href="#">Company</Link>
         </div>
         <div className="hidden lg:block">
           <button
