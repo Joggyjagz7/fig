@@ -13,11 +13,11 @@ module.exports = {
   				DEFAULT: 'hsl(var(--primary))',
   				foreground: 'hsl(var(--primary-foreground))'
   			},
-        "primary-purple": "#5c4b9f",
+  			'primary-purple': '#5c4b9f',
   			'dark-gray': '#EFEFEF',
   			'accent-light': '#e0dcef',
-  			background: 'hsl(var(--background))',
-  			foreground: 'hsl(var(--foreground))',
+  			background: '#e0dcef',
+  			foreground: '#5c4b9f',
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'
@@ -74,11 +74,30 @@ module.exports = {
   				to: {
   					transform: 'translateY(calc(-100% - var(--gap)))'
   				}
+  			},
+  			rippling: {
+  				'0%': {
+  					opacity: '1'
+  				},
+  				'100%': {
+  					transform: 'scale(2)',
+  					opacity: '0'
+  				}
+  			},
+  			ripple: {
+  				'0%, 100%': {
+  					transform: 'translate(-50%, -50%) scale(1)'
+  				},
+  				'50%': {
+  					transform: 'translate(-50%, -50%) scale(0.9)'
+  				}
   			}
   		},
   		animation: {
   			marquee: 'marquee var(--duration) infinite linear',
-  			'marquee-vertical': 'marquee-vertical var(--duration) linear infinite'
+  			'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
+  			rippling: 'rippling var(--duration) ease-out',
+  			ripple: 'ripple var(--duration,2s) ease calc(var(--i, 0)*.2s) infinite'
   		}
   	}
   },

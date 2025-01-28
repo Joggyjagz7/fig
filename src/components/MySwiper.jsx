@@ -13,16 +13,19 @@ const MySwiper = () => {
         disableOnInteraction: false,
       }}
       modules={[Autoplay]}
-      className="mySwiper h-[30px] inline-block    "
+      className="mySwiper h-[50px] inline-block rounded-[10px] p-[5px]    "
     >
-      <SwiperSlide className="h-full ">
-        <p>Slide 1</p>
+      <SwiperSlide className="h-full w-full  ">
+        <p className="font-[700]">Kwame</p>
       </SwiperSlide>
-      <SwiperSlide className="h-full ">
-        <p>Slide 2</p>
+      <SwiperSlide className="h-full flexw-full ">
+        <p className="font-[700]">Ejiro</p>
       </SwiperSlide>
-      <SwiperSlide className="h-full ">
-        <p>Slide 3</p>
+      <SwiperSlide className="h-full w-full  ">
+        <p className="font-[700]">Busayo</p>
+      </SwiperSlide>
+      <SwiperSlide className="h-full w-full  ">
+        <p className="font-[700]">Anyango</p>
       </SwiperSlide>
     </Swiper>
   );

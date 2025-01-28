@@ -1,6 +1,8 @@
+import { Ripple } from "../ui/ripple";
+
 const Choose = () => {
   return (
-    <section className="choose-bg">
+    <section className="choose-bg relative">
       <div className="lg:h-[90vh] flex lg:justify-between py-[50px] flex-col gap-[20px] ">
         <div className="flex justify-center items-center">
           <h2 className="heading-2 text-white">Why Choose Us</h2>
@@ -41,6 +43,7 @@ const Choose = () => {
             </div>
         </div>
       </div>
+      {/* <Ripple /> */}
     </section>
   );
 };
