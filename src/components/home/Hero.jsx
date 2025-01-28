@@ -24,13 +24,13 @@ const Hero = () => {
             Powering the dreams of {"    "}
             <MySwiper />
           </span>
-          <span className="text-[20px] md:h-[30px] block h-[70px]  mt-3 lg:hidden  ">
+          <span className="text-[20px] md:h-[30px] block h-[40px] mb-[30px] md:mb-0 mt-3 lg:hidden  ">
             Powering the dreams of {"    "}{" "}
             <span className="text-[#050914] font-[700]">
               <MyTypewriter />
             </span>
           </span>
-          <div className="md:flex gap-[20px] md:my-5  lg:mt-[20px] md:justify-center lg:justify-start   ">
+          <div className="md:flex gap-[20px] md:my-5   lg:mt-[20px] md:justify-center lg:justify-start   ">
             <button className="btn-colored">Apply For Funding</button>
             <button className="btn hidden gap-2 items-center  lg:flex">
               Learn More
@@ -49,15 +49,7 @@ const Hero = () => {
             />
           </div>
         </div>
-        <div className="absolute  bottom-0 w-full ">
-          <div className="h-[50px] w-full relative">
-            <Image
-              src="/images/white-waves.png"
-              fill
-              className="object-cover border-4 border-red-500 "
-            />
-          </div>
-        </div>
+       
       </div>
     </div>
   );
