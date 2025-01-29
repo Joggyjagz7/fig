@@ -63,3 +63,21 @@ export const TestimonialData = [
         desc: "Fig has been a blessing. They saw potential in my idea when no bank would even listen. I’m now a full-time influencer thanks to their trust in me"
     },
 ]
+
+export const FaqDetails = [
+    {
+        value: "Item 1",
+        question: "what is your name",
+        answer: "you know my name",
+    },
+    {
+        value: "Item 2",
+        question: "what is your name",
+        answer: "you know my name",
+    },
+    {
+        value: "Item 3",
+        question: "what is your name",
+        answer: "you know my name",
+    },
+]
