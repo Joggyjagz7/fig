@@ -8,6 +8,6 @@ export const OpenSans = Open_Sans({
 
 export const poppins = Poppins({
     subsets: ['latin'],
-    weight: ['400'], 
+    weight: ['400', '700', '800'], 
     style: ['normal', 'italic'], 
   });

@@ -2,94 +2,61 @@ import Image from "next/image";
 
 const TrackRecord = () => {
   return (
-    <section className="w-full py-[50px] md:pb-0 lg:py-[50px] ">
-      <div className="w-10/12 md:w-11/12 mx-auto md:h-screen ">
-        <div className=" mb-[50px]">
-          <h2 className="heading-2 text-center ">Our Track Record</h2>
-        </div>
-        <div className=" md:hidden  r">
-          <div className=" grid grid-cols-2 gap-[30px] mb-[20px]">
-            <div className="col-span-1">
-              <h2 className="heading-3">₦2M+</h2>
-              <p className="text-[14px] text-black">
-                Funded to support creators and influencers.
-              </p>
+    <section className="w-full py-[50px] lg:py-0 bg-light-bg ">
+      <div className="w-10/12    md:w-11/12 mx-auto md:h-screen ">
+       
+        <div className="flex flex-col lg:flex-row">
+          <div className="lg:w-[70%]">
+          <div className="w-full"> <h2 className="heading-2 ">Our Track Record</h2></div>
+            <div className="flex mb-3  lg:w-11/12 ">
+              <div className="w-[50%] md:w-[30%] lg:w-[50%] ">
+                <h3 className="font-[7000] text-[35px] lg:text-[50px] ">₦2M+</h3>
+                <p className="font-[400] text-[16px]">
+                  {" "}
+                  Funded to support creators and influencers.
+                </p>
+              </div>
+              <div className="w-[50%] md:w-[30%] lg:w-[50%] ">
+                <h3 className="font-[7000] text-[35px] lg:text-[50px] ">15+ </h3>
+                <p className="font-[400] text-[16px]">
+                  {" "}
+                  Projects funded across Africa.
+                </p>
+              </div>
             </div>
-            <div className="col-span-1">
-              <h2 className="heading-3">15+</h2>
-              <p className="text-[14px] text-black">
-                Projects funded across Africa.
-              </p>
+            <div className="flex mb-3  lg:w-11/12">
+              <div className="w-[50%] md:w-[30%] lg:w-[50%] ">
+                <h3 className="font-[7000] text-[35px] lg:text-[50px] ">98%</h3>
+                <p className="font-[400] text-[16px]">
+                  {" "}
+                  Approval rate for eligible creators.
+                </p>
+              </div>
+              <div className="w-[50%] md:w-[30%] lg:w-[50%] ">
+                <h3 className="font-[7000] text-[35px] lg:text-[50px] ">12+ </h3>
+                <p className="font-[400] text-[16px]">
+                  {" "}
+                  Creators empowered to level up their craft.
+                </p>
+              </div>
+            </div>
+            <div className="flex mb-3">
+              <div className="w-[50%] md:w-[30%] lg:w-full lg:text-center ">
+                <h3 className="font-[7000] text-[35px] lg:text-[50px]">98%</h3>
+                <p className="font-[400] text-[16px]">
+                  {" "}
+                  Repayment flexibility rating from satisfied users.
+                </p>
+              </div>
             </div>
           </div>
-
-          <div className=" grid grid-cols-2 gap-[30px] mb-[20px]">
-            <div className="col-span-1">
-              <h2 className="heading-3">98%</h2>
-              <p className="text-[14px] text-black">
-                Approval rate for eligible creators.
-              </p>
-            </div>
-            <div className="col-span-1">
-              <h2 className="heading-3">12+ </h2>
-              <p className="text-[14px] text-black">
-                Creators empowered to level up their craft.
-              </p>
-            </div>
-          </div>
-          <div className="md:col-span-3 grid grid-cols-2 gap-[30px] mb-[20px]">
-            <div className="col-span-1">
-              <h2 className="heading-3">98%</h2>
-              <p className="text-[14px] text-black">
-                Repayment flexibility rating from satisfied users.
-              </p>
-            </div>
-            <div className="col-span-1">
-              <h2 className="heading-3"></h2>
-              <p className="text-[14px] text-black"></p>
-            </div>
-          </div>
-        </div>
-        <div className="grid grid-cols-2 md:gap-[10px] lg:gap-[20px] items-center lg:h-[90vh]  ">
-          <div className="h-full relative hidden md:block col-span-1 ">
+          <div className="lg:w-1/2 ">
+            <div className="h-full w-full relative">
             <Image
               src="/images/Track.webp"
               fill
              className="object-cover rounded-[30px]"
             />
-          </div>
-            
-          {/* desktop */}
-          <div className="hidden md:grid grid-cols-2 md:gap-[10px] lg:gap-[40px]  col-span-1 rounded-tr-none rounded-bl-none rounded-[20px]   mx-auto md:p-[20px] lg:p-[30px] bg-[#EFEFEF] justify-center ">
-            <div className="col-span-1 bg-white rounded-[20px] rounded-tr-none rounded-bl-none p-[15px]">
-              <h2 className="heading-3">₦2M+</h2>
-              <p className="text-[14px] text-black">
-                Funded to support creators and influencers.
-              </p>
-            </div>
-            <div className="col-span-1 bg-white rounded-[20px] rounded-tr-none rounded-bl-none p-[15px]">
-              <h2 className="heading-3">15+</h2>
-              <p className="text-[14px] text-black">
-                Projects funded across Africa.
-              </p>
-            </div>
-            <div className="col-span-1 bg-white rounded-[20px] rounded-tr-none rounded-bl-none p-[15px]">
-              <h2 className="heading-3">98%</h2>
-              <p className="text-[14px] text-black">
-                Approval rate for eligible creators.
-              </p>
-            </div>
-            <div className="col-span-1 bg-white rounded-[20px] rounded-tr-none rounded-bl-none p-[15px]">
-              <h2 className="heading-3">12+ </h2>
-              <p className="text-[14px] text-black">
-                Creators empowered to level up their craft.
-              </p>
-            </div>
-            <div className="col-span-1 bg-white rounded-[20px] rounded-tr-none rounded-bl-none p-[15px]">
-              <h2 className="heading-3">98%</h2>
-              <p className="text-[13px] text-black">
-                Repayment flexibility rating from satisfied users.
-              </p>
             </div>
           </div>
         </div>
@@ -99,3 +66,8 @@ const TrackRecord = () => {
 };
 
 export default TrackRecord;
+{
+  /* <div className="h-full relative hidden md:block col-span-1 ">
+           
+          </div> */
+}

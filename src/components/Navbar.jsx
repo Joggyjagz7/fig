@@ -54,7 +54,7 @@ const Navbar = () => {
       >
         <div className="text-[25px] font-[900]  ">Fig</div>
         <div
-          className={`lg:flex gap-[20px] hidden  text-[13px] font-[500] ${poppins.className} `}
+          className={`lg:flex gap-[20px] hidden  text-[15px] font-[600] ${poppins.className} `}
         >
           <Link href="#">Products</Link>
           <Link href="#">Use Cases</Link>
@@ -63,7 +63,7 @@ const Navbar = () => {
         </div>
         <div className="hidden lg:block">
           <button
-            className={`text-[14px] font-[700] ${
+            className={`text-[15px] font-[700] ${
               isScrolled ? "btn" : "btn-colored"
             }`}
           >

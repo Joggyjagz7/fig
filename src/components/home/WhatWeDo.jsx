@@ -9,7 +9,7 @@ import { ChevronsRight } from "lucide-react";
 const variants = {
   initial: {
     opacity: 0,
-    x: 100,
+    x: 50,
   },
   animate: (index) => ({
     opacity: 1,
@@ -27,67 +27,12 @@ const variants = {
 };
 const WhatWeDo = () => {
   return (
-    <section className="w-full  ">
-      {/* <div className="relative h-[70px] w-full ">
-        <Image src="/images/wave.svg" alt="" fill objectFit="cover" />
-      </div> */}
-      <div className="lg:my-[10px] lg:w-10/13 w-11/12  lg:pt-[20px] py-[50px] mx-auto ">
+    <section className="w-full bg-accent-light  ">
+      <div className=" lg:w-10/13 w-11/12  lg:pt-[20px] py-[50px] mx-auto ">
         <div className=" h-full ">
-          <div className=" px-[10px]  flex flex-col lg:flex-row  gap-[20px] mx-auto lg:py-[50px] w-full rounded-[20px] ">
-            <div className="flex flex-col  md:w-10/12  md:mx-auto justify-center  lg:mx-auto ">
-              <motion.h2
-               initial={{ opacity: 0, y: 100  }}
-               whileInView={{ opacity: 1, y: 0}}
-               transition={{duration:1,  type: "spring", bounce: 0.6 }}
-               viewport={{ once: true, amount: 0.5 }}
-                className={`heading-2 text-center lg:text-start font-[700]  `}
-              >
-                For Creators and Influencers <br /> Who Dream Big
-              </motion.h2>
-              <motion.p
-              initial={{ opacity: 0, y: 100  }}
-              whileInView={{ opacity: 1, y: 0}}
-              transition={{duration:1, delay: 0.5,  type: "spring", bounce: 0.6 }}
-              viewport={{ once: true, amount: 0.5 }}
-              className="parapraph text-center lg:text-start lg:w-[80%]">
-                Your creativity knows no boundary. Neither should the resources
-                to bring it to life.
-                <br /> Fig Finance gives you the financial freedom to focus on
-                what matters (your content, your passion, and your projects.)
-              </motion.p>
-              <motion.div
-              initial={{ opacity: 0, y: 100  }}
-              whileInView={{ opacity: 1, y: 0}}
-              transition={{duration:1, delay: 1,  type: "spring", bounce: 0.6 }}
-              viewport={{ once: true, amount: 0.5 }}
-              className="mt-[20px] hidden lg:block">
-                <button className="btn gap-2 items-center flex">
-                  Learn More
-                  <ChevronsRight />
-                </button>
-              </motion.div>
-            </div>
-            <div className=" w-full    creators-bg ">
-              <div className=" h-[300px] md:h-[400px] w-full relative">
-                <Image
-                  src="/images/woman-smiling.webp"
-                  alt="happy influncer"
-                  fill
-                  className="object-cover rounded-[20px]"
-                />
-              </div>
-              <div className="mt-[40px] flex justify-center lg:hidden">
-                <button className="btn gap-2 items-center flex">
-                  Learn More
-                  <ChevronsRight />
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div className="pt-[50px]">
-            <h2 className="heading-2 text-center  ">What We Do</h2>
-            <div className="w-full overflow-hidden  grid md:grid-cols-2 lg:grid-cols-4  gap-[20px] mt-[30px]">
+          <div className="py-[50px]">
+            <h2 className="heading-2 text-center lg:text-start  ">What We Do</h2>
+            <div className="w-full  border  grid md:grid-cols-2 lg:grid-cols-4  gap-[20px] mt-[30px] lg:px-[20px] ">
               {CardDetails.map((card) => (
                 <motion.div
                   variants={variants}
@@ -110,7 +55,7 @@ const WhatWeDo = () => {
                   </div>
                   <div>
                     <h4 className="heading-4 lg:mb-[10px] ">{card.title}</h4>
-                    <p className="text-[14px] lg:text-[13px]">{card.desc}</p>
+                    <p className="text-[14px] font-[400] lg:text-[13px]">{card.desc}</p>
                   </div>
                 </motion.div>
               ))}
