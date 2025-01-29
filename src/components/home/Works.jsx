@@ -30,10 +30,10 @@ export const variants = {
 
 const Works = () => {
   return (
-    <section className="w-full relative py-[60px] bg-light-bg  overflow-hidden">
-      <h2 className={`heading-2 text-center lg:text-start lg:w-11/12 lg:mx-auto`}>How It Works</h2>
+    <section className="w-full relative pt-[60px] pb-0 lg:py-[60px] bg-light-bg  overflow-hidden">
+      <h2 className={`heading-2 text-start w-11/12 md:text-center lg:text-start lg:w-11/12 mx-auto`}>How It Works</h2>
 
-      <div className="w-10/12 md:h-screen mx-auto md:grid gap-[40px] items-center grid-cols-2">
+      <div className="w-10/12  lg:h-screen mx-auto lg:grid gap-[40px] items-center grid-cols-2">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -44,7 +44,7 @@ const Works = () => {
             bounce: 0.6,
           }}
           viewport={{ once: true, amount: 0.5 }}
-          className=" h-[80vh] w-full relative  hidden md:block    md:col-span-1"
+          className=" h-[80vh] w-full relative  hidden lg:block    md:col-span-1"
         >
           <Image
             alt="how we work demo"
@@ -54,7 +54,7 @@ const Works = () => {
           />
         </motion.div>
 
-        <div className=" mx-auto md:col-span-1 ">
+        <div className=" mx-auto md:col-span-2 lg:col-span-1 ">
           {/* timeline container */}
           <div>
             <div className=" flex justify-between w-11/12 md:w-9/12 mx-auto border-l-2 border-l-black relative">
@@ -82,7 +82,7 @@ const Works = () => {
                   bounce: 0.6,
                 }}
                 viewport={{ once: true, amount: 0.5 }}
-                className="min-h-[100px] pt-[10px] w-[89%]"
+                className="min-h-[100px] pt-[10px] w-[89%] md:w-full"
               >
                 <h3 className="font-bold text-lg mb-2">
                   Bridge Finance for Influencers and Creators

@@ -5,10 +5,10 @@ import TestimonialCard from "./TestimonialCard";
 
 const Testimonial = () => {
   return (
-    <section className="w-full py-[50px]">
-      <div className="relative w-10/12 md:w-9/12   mx-auto">
+    <section className="w-full pt-[50px] pb-0 md:py-[50px] ">
+      <div className="relative w-11/12 md:w-9/12   mx-auto">
         <div className="mb-[50px]">
-          <h2 className="heading-2 text-center">What Creators Are Saying</h2>
+          <h2 className="heading-2 text-start md:text-center">What Creators Are Saying</h2>
         </div>
         <Marquee>
           {[...TestimonialData, ...TestimonialData].map((Testimonial, index) => (

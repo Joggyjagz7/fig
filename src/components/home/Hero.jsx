@@ -24,7 +24,7 @@ const Hero = () => {
             Powering the dreams of {"    "}
             <MySwiper />
           </span>
-          <span className="text-[20px] md:h-[30px] block h-[40px] mb-[30px] md:mb-0 mt-3 lg:hidden  ">
+          <span className="text-[20px] md:h-[30px] font-[400] block h-[40px] mb-[20px] md:mb-0 mt-3 lg:hidden  ">
             Powering the dreams of {"    "}{" "}
             <span className="text-[#050914] font-[700]">
               <MyTypewriter />
