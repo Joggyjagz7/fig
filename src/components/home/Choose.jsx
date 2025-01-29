@@ -7,7 +7,7 @@ const Choose = () => {
   return (
     <section className="choose-bg relative">
       <div className="lg:h-screen flex lg:justify-between py-[50px] flex-col gap-[20px] ">
-        <div className="flex justify-center lg:justify-start lg:w-11/12 lg:mx-auto items-center">
+        <div className="flex justify-center  lg:justify-start lg:w-11/12 lg:mx-auto items-center">
           <h2 className="heading-2 text-white ">Why Choose Us</h2>
         </div>
         <div className="flex flex-col gap-[20px]  lg:gap-0 lg:flex-row justify-between w-full lg:w-11/12 mx-auto  ">
