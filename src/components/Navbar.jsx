@@ -1,7 +1,9 @@
 "use client";
 
 import { poppins } from "@/app/fonts";
+import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState, useRef } from "react";
 
@@ -44,15 +46,50 @@ const Navbar = () => {
   return (
     <nav
       className={`${
-        isScrolled ? "bg-primary-purple" : "bg-transparent"
-      } sticky top-0  h-[70px]  lg:h-[50px]   transition-all duration-300 `}
+        isScrolled ? "bg-primary-color" : "bg-transparent"
+      } sticky top-0  h-[70px]  lg:h-auto lg:py-[5px]   transition-all duration-300 `}
     >
       <div
         className={`flex justify-between mx-auto w-11/12 h-full relative items-center ${
-          isScrolled ? " text-white" : "text-primary-purple"
+          isScrolled ? " text-white" : "text-primary-color"
         }`}
       >
-        <div className="text-[25px] font-[900]  ">Fig</div>
+        <AnimatePresence mode="wait">
+          {isScrolled ? (
+            <motion.div
+              key="logo-white"
+              initial={{ opacity: 0, y: -50 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -50 }}
+              transition={{ duration: 0.4, ease: "easeInOut" }}
+              className="h-[70px] w-[250px] relative"
+            >
+              <Image
+                src="/images/logo-white.svg"
+                alt="fig finance logo"
+                fill
+                className="object-cover"
+              />
+            </motion.div>
+          ) : (
+            <motion.div
+              key="logo-dark"
+              initial={{ opacity: 0, y: -50 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 50 }}
+              transition={{ duration: 0.4, ease: "easeInOut" }}
+              className="h-[70px] w-[170px] relative"
+            >
+              <Image
+                src="/images/logo.png"
+                alt="fig finance logo"
+                fill
+                className="object-cover"
+              />
+            </motion.div>
+          )}
+        </AnimatePresence>  
+
         <div
           className={`lg:flex gap-[20px] hidden  text-[15px] font-[600] ${poppins.className} `}
         >
@@ -75,7 +112,7 @@ const Navbar = () => {
         <div ref={ref} className="lg:hidden " onClick={toggleDropdown}>
           {showDropdown ? <X /> : <Menu />}
         </div>
-        {showDropdown && (
+        {/* {showDropdown && (
           <div className="lg:hidden absolute top-[70px] w-full h-[300px] z-[999] bg-dark-gray ">
             <ul className=" space-y-3 text-black">
               <li className="">
@@ -90,7 +127,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-        )}
+        )} */}
       </div>
     </nav>
   );

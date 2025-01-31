@@ -13,10 +13,11 @@ module.exports = {
   				DEFAULT: 'hsl(var(--primary))',
   				foreground: 'hsl(var(--primary-foreground))'
   			},
-  			'primary-purple': '#5c4b9f',
+  			'primary-color': '#0497A2',
   			'dark-gray': '#EFEFEF',
-  			'accent-light': '#e0dcef',
+  			'accent-light': '#e6fdfe',
 			"light-bg": "#efeef7",
+			"primary-black": "#2d2d2d",
   			background: '#e0dcef',
   			foreground: '#5c4b9f',
   			card: {

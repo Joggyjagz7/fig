@@ -30,10 +30,14 @@ export const variants = {
 
 const Works = () => {
   return (
-    <section className="w-full relative pt-[60px] pb-0 lg:py-[60px] bg-light-bg  overflow-hidden">
-      <h2 className={`heading-2 text-start w-11/12 md:text-center lg:text-start lg:w-11/12 mx-auto`}>How It Works</h2>
+    <section className="w-full relative pt-[100px] pb-0 lg:py-[60px]   overflow-hidden">
+      <h2
+        className={`heading-2 text-start w-11/12 md:text-center lg:text-start lg:w-11/12 mx-auto`}
+      >
+        How It Works
+      </h2>
 
-      <div className="w-10/12  lg:h-screen mx-auto lg:grid gap-[40px] items-center grid-cols-2">
+      <div className="w-10/12 lg:min-h-[100vh]  mx-auto md:grid gap-[40px] items-center grid-cols-2">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -44,7 +48,7 @@ const Works = () => {
             bounce: 0.6,
           }}
           viewport={{ once: true, amount: 0.5 }}
-          className=" h-[80vh] w-full relative  hidden lg:block    md:col-span-1"
+          className=" h-full w-full relative  hidden lg:block    lg:col-span-1"
         >
           <Image
             alt="how we work demo"
@@ -54,23 +58,27 @@ const Works = () => {
           />
         </motion.div>
 
-        <div className=" mx-auto md:col-span-2 lg:col-span-1 ">
+        <div className=" mx-auto  lg:col-span-1 ">
+
           {/* timeline container */}
           <div>
-            <div className=" flex justify-between w-11/12 md:w-9/12 mx-auto border-l-2 border-l-black relative">
+            <div className=" flex justify-between w-11/12 md:w-full lg:md:w-9/12 mx-auto border-l-2 border-l-black relative">
               <div className="w-[10%]"></div>
               <div className="flex justify-center items-center  h-[50px] w-[50px] rounded-[50%]  text-primary-purple bg-white absolute -left-[25px]">
                 <motion.h3
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{
-                  duration: 1,
-                  delay: 1,
-                  type: "spring",
-                  bounce: 0.6,
-                }}
-                viewport={{ once: true, amount: 0.5 }}
-                className="font-[700] text-[20px]">01</motion.h3>
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{
+                    duration: 1,
+                    delay: 1,
+                    type: "spring",
+                    bounce: 0.6,
+                  }}
+                  viewport={{ once: true, amount: 0.5 }}
+                  className="font-[700] text-[20px]"
+                >
+                  01
+                </motion.h3>
               </div>
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
@@ -82,32 +90,33 @@ const Works = () => {
                   bounce: 0.6,
                 }}
                 viewport={{ once: true, amount: 0.5 }}
-                className="min-h-[100px] pt-[10px] w-[89%] md:w-full"
+                className="min-h-[100px] mb-5 pt-[10px] w-[89%] md:w-full"
               >
                 <h3 className="font-bold text-lg mb-2">
-                  Bridge Finance for Influencers and Creators
+                Share Your Vision
                 </h3>
                 <p className="text-sm font-[400] text-gray-700">
-                  The campaigns, the content, the collaborations—it all takes
-                  resources. Fig Finance provides the funds you need to secure
-                  deals, create stellar campaigns, and grow your brand.
+                Share your idea, your project, and your dream. We’ll help you fund it.
                 </p>
               </motion.div>
             </div>
-            <div className=" flex justify-between w-11/12 md:w-9/12 mx-auto border-l-2 border-l-black relative">
+            <div className=" flex justify-between w-11/12 md:w-full lg:md:w-9/12 mx-auto border-l-2 border-l-black relative">
               <div className="w-[10%]"></div>
               <div className="flex justify-center items-center  h-[50px] w-[50px] rounded-[50%]  text-primary-purple bg-white absolute -left-[25px]">
                 <motion.h3
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{
-                  duration: 1,
-                  delay: 1.5,
-                  type: "spring",
-                  bounce: 0.6,
-                }}
-                viewport={{ once: true, amount: 0.5 }}
-                className="font-[700] text-[20px]">02</motion.h3>
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{
+                    duration: 1,
+                    delay: 1.5,
+                    type: "spring",
+                    bounce: 0.6,
+                  }}
+                  viewport={{ once: true, amount: 0.5 }}
+                  className="font-[700] text-[20px]"
+                >
+                  02
+                </motion.h3>
               </div>
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
@@ -119,19 +128,33 @@ const Works = () => {
                   bounce: 0.6,
                 }}
                 viewport={{ once: true, amount: 0.5 }}
-                className="min-h-[100px] pt-[10px] w-[89%]"
+                className="min-h-[100px] mb-5 pt-[10px] w-[89%]"
               >
-                <h3 className="font-bold text-lg mb-2">Buy Now, Pay Later</h3>
+                <h3 className="font-bold text-lg mb-2">Get Funded Fast</h3>
                 <p className="text-sm font-[400] text-gray-700">
-                  Need tools, courses, or equipment to level up? Get what you
-                  need now and pay later with Fig Finance.
+                Blink and you’ll have the funds. We move quickly. Once approved, the funds are in your account and ready to go.
                 </p>
               </motion.div>
             </div>
-            <div className=" flex justify-between w-11/12 md:w-9/12 mx-auto  relative">
+            <div className=" flex justify-between w-11/12 md:w-full lg:md:w-9/12 mx-auto border-l-2 border-l-black relative">
               <div className="w-[10%]"></div>
               <div className="flex justify-center items-center  h-[50px] w-[50px] rounded-[50%]  text-primary-purple bg-white absolute -left-[25px]">
                 <motion.h3
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{
+                    duration: 1,
+                    delay: 2,
+                    type: "spring",
+                    bounce: 0.6,
+                  }}
+                  viewport={{ once: true, amount: 0.5 }}
+                  className="font-[700] text-[20px]"
+                >
+                  03
+                </motion.h3>
+              </div>
+              <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
@@ -141,31 +164,75 @@ const Works = () => {
                   bounce: 0.6,
                 }}
                 viewport={{ once: true, amount: 0.5 }}
-                className="font-[700] text-[20px]">03</motion.h3>
-              </div>
-              <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 1,
-                delay: 2,
-                type: "spring",
-                bounce: 0.6,
-              }}
-              viewport={{ once: true, amount: 0.5 }}
-              className="min-h-[100px] pt-[10px] w-[89%]">
+                className="min-h-[100px] mb-5 pt-[10px] w-[89%]"
+              >
                 <h3 className="font-bold text-lg mb-2">
-                  Promotion and Learning Support
+                Create Your Masterpiece
                 </h3>
                 <p className="text-sm font-[400] text-gray-700">
-                  From promoting your work to investing in courses that sharpen
-                  your skills, Fig Finance helps you stay ahead in a competitive
-                  creative world.
+                Shoot. Edit. Post. Let the world see your brilliance.
                 </p>
+              </motion.div>
+            </div>
+            <div className=" flex justify-between w-11/12 md:w-full lg:md:w-9/12 mx-auto  relative">
+              <div className="w-[10%]"></div>
+              <div className="flex justify-center items-center  h-[50px] w-[50px] rounded-[50%]  text-primary-purple bg-white absolute -left-[25px]">
+                <motion.h3
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{
+                    duration: 1,
+                    delay: 2.5,
+                    type: "spring",
+                    bounce: 0.6,
+                  }}
+                  viewport={{ once: true, amount: 0.5 }}
+                  className="font-[700] text-[20px]"
+                >
+                  04
+                </motion.h3>
+              </div>
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  duration: 1,
+                  delay: 2.5,
+                  type: "spring",
+                  bounce: 0.6,
+                }}
+                viewport={{ once: true, amount: 0.5 }}
+                className="min-h-[100px] pt-[10px] w-[89%]"
+              >
+                <h3 className="font-bold text-lg mb-2">
+                Repay On Your Terms
+                </h3>
+                <p className="text-sm font-[400] text-gray-700 mb-10">
+                Pay us back when the cash starts flowing. We work with flexible payment options.
+                </p>
+                <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 1,
+              delay: 1,
+              type: "spring",
+              bounce: 0.6,
+            }}
+            viewport={{ once: true, amount: 0.5 }}
+            className="mt-[30px]  "
+          >
+            <button className="btn-colored gap-2 items-center flex">
+              Apply For Funding
+              <ChevronsRight />
+            </button>
+          </motion.div>
               </motion.div>
             </div>
           </div>
           {/* timeline ends here  */}
+
+
           <motion.div
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -176,7 +243,7 @@ const Works = () => {
               bounce: 0.6,
             }}
             viewport={{ once: true, amount: 0.5 }}
-            className="mt-[30px]  flex justify-center"
+            className="mt-[30px]  "
           >
             <button className="btn-colored gap-2 items-center flex">
               Apply For Funding

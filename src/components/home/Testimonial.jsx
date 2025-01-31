@@ -5,15 +5,18 @@ import TestimonialCard from "./TestimonialCard";
 
 const Testimonial = () => {
   return (
-    <section className="w-full pt-[50px] pb-0 md:py-[50px] ">
-      <div className="relative w-11/12 md:w-9/12   mx-auto">
-        <div className="mb-[50px]">
-          <h2 className="heading-2 text-start md:text-center">What Creators Are Saying</h2>
+    <section className="w-full pt-[100px]  pb-0 md:pt-[70px] ">
+      <div className="relative w-full  mx-auto">
+        <div className="mb-[50px] md:w-11/12 mx-auto">
+          <h2 className="heading-2 w-11/12 mx-auto md:w-full text-start r">What Creators Are Saying</h2>
         </div>
-        <Marquee>
+        <Marquee className="w-full lg:w-full">
+          <div className="flex gap-x-4 w-full h-[300px]">
           {[...TestimonialData, ...TestimonialData].map((Testimonial, index) => (
-            <TestimonialCard {...Testimonial} key={index} />
+            <TestimonialCard {...Testimonial} key={index} className="flex-shrink-0 w-full md:w-2/3 lg:w-1/3" />
           ))}
+
+          </div>
         </Marquee>
       </div>
     </section>

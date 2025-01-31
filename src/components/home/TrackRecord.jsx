@@ -2,10 +2,10 @@ import Image from "next/image";
 
 const TrackRecord = () => {
   return (
-    <section className="w-full py-[50px] lg:py-0 bg-light-bg ">
-      <div className="w-11/12    md:w-11/12 mx-auto md:min-h-screen lg:screen ">
-        <div className="flex flex-col  gap-[30px] lg:flex-row">
-          <div className="lg:w-[70%]">
+    <section className="w-full pb-[30px] pt-[80px] md:py-[50px]  bg-accent-light ">
+      <div className="w-11/12 flex items-center    md:w-11/12 mx-auto md:min-h-screen lg:screen ">
+        <div className="flex flex-col  w-full gap-[30px] lg:flex-row">
+          <div className="lg:w-[70%] ">
             <div className="w-full">
               {" "}
               <h2 className="heading-2 md:text-center lg:text-start">Our Track Record</h2>
@@ -49,7 +49,7 @@ const TrackRecord = () => {
               </div>
             </div>
             <div className="flex md:justify-center lg:justify-start mb-3">
-              <div className="w-[50%] md:w-[30%] lg:w-full lg:text-center ">
+              <div className="w-[50%] md:w-[30%] lg:w-[50%]  ">
                 <h3 className="font-[7000] text-[35px] lg:text-[50px]">98%</h3>
                 <p className="font-[400] text-[16px]">
                   {" "}
