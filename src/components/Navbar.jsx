@@ -58,17 +58,17 @@ const Navbar = () => {
           {isScrolled ? (
             <motion.div
               key="logo-white"
-              initial={{ opacity: 0, y: -50 }}
+              initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -50 }}
-              transition={{ duration: 0.4, ease: "easeInOut" }}
-              className="h-[70px] w-[250px] relative"
+              exit={{ opacity: 0, y: 30 }}
+              transition={{ duration: 0.2, ease: "easeInOut" }}
+              className="h-[70px] w-[170px]  relative"
             >
               <Image
                 src="/images/logo-white.svg"
                 alt="fig finance logo"
                 fill
-                className="object-cover"
+                className="object-contain"
               />
             </motion.div>
           ) : (
@@ -76,8 +76,8 @@ const Navbar = () => {
               key="logo-dark"
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 50 }}
-              transition={{ duration: 0.4, ease: "easeInOut" }}
+              exit={{ opacity: 0, y: -50 }}
+              transition={{ duration: 0.2, ease: "easeInOut" }}
               className="h-[70px] w-[170px] relative"
             >
               <Image

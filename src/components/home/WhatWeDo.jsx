@@ -46,7 +46,6 @@ const WhatWeDo = () => {
                   whileInView="animate"
                   whileHover={{
                     scale: 1.02,
-                    // boxShadow: "0 4px 20px rgba(0, 0, 0, 0.2)",
                   }}
                   custom={card.id}
                   viewport={{

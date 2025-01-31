@@ -8,9 +8,9 @@ const TrackRecord = () => {
           <div className="lg:w-[70%] ">
             <div className="w-full">
               {" "}
-              <h2 className="heading-2 md:text-center lg:text-start">Our Track Record</h2>
+              <h2 className="heading-2 md:text-center text-primary-black lg:text-start">Our Track Record</h2>
             </div>
-            <div className="flex mb-3 md:justify-center lg:justify-start  lg:w-11/12 ">
+            <div className="flex text-primary-black mb-3 md:justify-center lg:justify-start  lg:w-11/12 ">
               <div className="w-[50%] md:w-[30%] lg:w-[50%] ">
                 <h3 className="font-[7000] text-[35px] lg:text-[50px] ">
                   ₦2M+
@@ -30,7 +30,7 @@ const TrackRecord = () => {
                 </p>
               </div>
             </div>
-            <div className="flex mb-3 md:justify-center lg:justify-start lg:w-11/12">
+            <div className="flex text-primary-black mb-3 md:justify-center lg:justify-start lg:w-11/12">
               <div className="w-[50%] md:w-[30%] lg:w-[50%] ">
                 <h3 className="font-[7000] text-[35px] lg:text-[50px] ">98%</h3>
                 <p className="font-[400] text-[16px]">
@@ -48,7 +48,7 @@ const TrackRecord = () => {
                 </p>
               </div>
             </div>
-            <div className="flex md:justify-center lg:justify-start mb-3">
+            <div className="flex text-primary-black md:justify-center lg:justify-start mb-3">
               <div className="w-[50%] md:w-[30%] lg:w-[50%]  ">
                 <h3 className="font-[7000] text-[35px] lg:text-[50px]">98%</h3>
                 <p className="font-[400] text-[16px]">
