@@ -59,7 +59,6 @@ const Works = () => {
         </motion.div>
 
         <div className=" mx-auto  lg:col-span-1 ">
-
           {/* timeline container */}
           <div>
             <div className=" flex justify-between w-11/12 md:w-full lg:md:w-9/12 mx-auto border-l-2 border-l-black relative">
@@ -92,11 +91,10 @@ const Works = () => {
                 viewport={{ once: true, amount: 0.5 }}
                 className="min-h-[100px] mb-5 pt-[10px] w-[89%] md:w-full"
               >
-                <h3 className="font-bold text-lg mb-2">
-                Share Your Vision
-                </h3>
+                <h3 className="font-bold text-lg mb-2">Share Your Vision</h3>
                 <p className="text-sm font-[400] text-gray-700">
-                Share your idea, your project, and your dream. We’ll help you fund it.
+                  Share your idea, your project, and your dream. We’ll help you
+                  fund it.
                 </p>
               </motion.div>
             </div>
@@ -132,7 +130,8 @@ const Works = () => {
               >
                 <h3 className="font-bold text-lg mb-2">Get Funded Fast</h3>
                 <p className="text-sm font-[400] text-gray-700">
-                Blink and you’ll have the funds. We move quickly. Once approved, the funds are in your account and ready to go.
+                  Blink and you’ll have the funds. We move quickly. Once
+                  approved, the funds are in your account and ready to go.
                 </p>
               </motion.div>
             </div>
@@ -167,10 +166,10 @@ const Works = () => {
                 className="min-h-[100px] mb-5 pt-[10px] w-[89%]"
               >
                 <h3 className="font-bold text-lg mb-2">
-                Create Your Masterpiece
+                  Create Your Masterpiece
                 </h3>
                 <p className="text-sm font-[400] text-gray-700">
-                Shoot. Edit. Post. Let the world see your brilliance.
+                  Shoot. Edit. Post. Let the world see your brilliance.
                 </p>
               </motion.div>
             </div>
@@ -204,52 +203,32 @@ const Works = () => {
                 viewport={{ once: true, amount: 0.5 }}
                 className="min-h-[100px] pt-[10px] w-[89%]"
               >
-                <h3 className="font-bold text-lg mb-2">
-                Repay On Your Terms
-                </h3>
+                <h3 className="font-bold text-lg mb-2">Repay On Your Terms</h3>
                 <p className="text-sm font-[400] text-gray-700 mb-10">
-                Pay us back when the cash starts flowing. We work with flexible payment options.
+                  Pay us back when the cash starts flowing. We work with
+                  flexible payment options.
                 </p>
                 <motion.div
-            initial={{ opacity: 0, y: 100 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{
-              duration: 1,
-              delay: 1,
-              type: "spring",
-              bounce: 0.6,
-            }}
-            viewport={{ once: true, amount: 0.5 }}
-            className="mt-[30px]  "
-          >
-            <button className="btn-colored gap-2 items-center flex">
-              Apply For Funding
-              <ChevronsRight />
-            </button>
-          </motion.div>
+                  initial={{ opacity: 0, y: 100 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{
+                    duration: 1,
+                    delay: 1,
+                    type: "spring",
+                    bounce: 0.6,
+                  }}
+                  viewport={{ once: true, amount: 0.5 }}
+                  className="mt-[30px]  "
+                >
+                  <button className="btn-colored gap-2 items-center flex">
+                    Apply For Funding
+                    <ChevronsRight />
+                  </button>
+                </motion.div>
               </motion.div>
             </div>
           </div>
           {/* timeline ends here  */}
-
-
-          <motion.div
-            initial={{ opacity: 0, y: 100 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{
-              duration: 1,
-              delay: 1,
-              type: "spring",
-              bounce: 0.6,
-            }}
-            viewport={{ once: true, amount: 0.5 }}
-            className="mt-[30px]  "
-          >
-            <button className="btn-colored gap-2 items-center flex">
-              Apply For Funding
-              <ChevronsRight />
-            </button>
-          </motion.div>
         </div>
       </div>
     </section>

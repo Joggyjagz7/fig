@@ -11,6 +11,7 @@ const Choose = () => {
           <h2 className="heading-2 text-white ">Why Choose Us</h2>
         </div>
         <div className="flex flex-col gap-[20px]  lg:gap-0 lg:flex-row justify-between w-full lg:w-11/12 mx-auto  ">
+        
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -68,7 +69,7 @@ const Choose = () => {
           viewport={{ once: true, amount: 0.5 }}
           className="flex justify-center items-center w-9/12 lg:w-[400px] md:w-8/12 mx-auto  "
         >
-          <div className="bg-white lg:group transition transform duration-500 ease-in-out lg:hover:scale-[110%]  p-[20px] w-11/12  mx-auto lg:mx-0  rounded-[10px] flex-1 ">
+          <div className="bg-white md:group transition transform duration-500 ease-in-out md:hover:scale-[110%]  p-[20px] w-11/12  mx-auto lg:mx-0  rounded-[10px] flex-1 ">
             <h4 className="group-hover:scale-105 transition ease-in-out font-[700] lg:mb-1 leading-[1.4em] ">
               Flexible Repayment{" "}
             </h4>
