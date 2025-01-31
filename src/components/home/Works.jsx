@@ -30,14 +30,14 @@ export const variants = {
 
 const Works = () => {
   return (
-    <section className="w-full relative pt-[100px] pb-0 lg:py-[60px]   overflow-hidden">
+    <section className="w-full relative pt-[100px]  pb-0 md:py-[60px]   overflow-hidden">
       <h2
-        className={`heading-2 text-start w-11/12 md:text-center lg:text-start lg:w-11/12 mx-auto`}
+        className={`heading-2 text-primary-black text-start w-11/12 md:text-center lg:text-start lg:w-11/12 mx-auto`}
       >
         How It Works
       </h2>
 
-      <div className="w-10/12 lg:min-h-[100vh]  mx-auto md:grid gap-[40px] items-center grid-cols-2">
+      <div className="w-10/12 lg:min-h-[100vh]   mx-auto md:grid gap-[40px] items-center grid-cols-2">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -221,7 +221,7 @@ const Works = () => {
                   className="mt-[30px]  "
                 >
                   <button className="btn-colored gap-2 items-center flex">
-                    Apply For Funding
+                    Contact Sales
                     <ChevronsRight />
                   </button>
                 </motion.div>

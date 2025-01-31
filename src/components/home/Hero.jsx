@@ -7,14 +7,14 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="w-full bg-accent-light  pb-[50px] md:pb-0 ">
-      <div className=" md:grid hero-bg relative  pt-[120px] grid-cols-1 md:grid-cols-2 w-11/12 md:w-11/12 min-h-screen   mx-auto ">
-        <div className="  pt-[40px] lg:pb-[40px] md:text-center lg:text-start md:w-9/12 md:mx-auto lg:w-11/12 lg:mx-0  md:col-span-2 lg:col-span-1  lg:flex flex-col k lg:justify-start">
+    <div className="w-full bg-accent-light   md:pb-0 ">
+      <div className=" md:grid hero-bg relative  lg:pb-0  pt-[120px] grid-cols-1 md:grid-cols-2 w-full md:w-11/12 min-h-screen   mx-auto ">
+        <div className=" w-11/12 mx-auto   pt-[40px] lg:pb-[40px] md:text-center lg:text-start md:w-9/12 md:mx-auto lg:w-11/12 lg:mx-0  md:col-span-2 lg:col-span-1  lg:flex flex-col k lg:justify-start">
           <h4 className="heading-4   text-primary-color mb-2 ">
             Trusted By 100+ Creators
           </h4>
           <h1
-            className={`lg:text-[60px] md:text-[40px] text-primary-black text-[35px]  leading-[1.25em] font-[700]`}
+            className={`heading-1`}
           >
             Financing for{" "}
             <span className="text-primary-color">Influencers </span> and{" "}
@@ -39,10 +39,10 @@ const Hero = () => {
         <div className=" h-[60vh]  lg:h-full w-full md:w-8/12 lg:w-full md:mx-auto md:mt-5 lg:mt-0 md:col-span-2 lg:col-span-1">
           <div className="h-full w-full relative ">
             <Image
-              src="/images/hero-web.gif"
+              src="/images/big-hero.gif"
               alt="fig creators gif image"
               fill
-              className="object-contain md:object-contain lg:hidden lg:object-cover"
+              className="object-cover  lg:hidden"
             />
           </div>
         </div>
