@@ -5,8 +5,8 @@ import TestimonialCard from "./TestimonialCard";
 
 const Testimonial = () => {
   return (
-    <section className="w-full pt-[100px]  pb-0 md:pt-[70px] ">
-      <div className="relative w-full  mx-auto">
+    <section className="w-full pt-[100px]  pb-0   ">
+      <div className="relative w-full md:h-[80vh] mx-auto">
         <div className="mb-[50px] md:w-11/12 mx-auto">
           <h2 className="heading-2 w-11/12 mx-auto md:w-full text-start r">What Creators Are Saying</h2>
         </div>
