@@ -4,24 +4,21 @@ export const CardDetails = [
     {
         id:0,
         img: <Waypoints  />,
-        title: "Bridge Finance for Influencers",
+        image: "/images/works-4.webp",
+        title: "Bridge Finance for Influencers & Creators",
         desc: "The campaigns, the content, the collaborations—it all takes resources.Fig Finance provides the funds you need to secure deals, create stellar campaigns, and grow your brand."
     },
     {
         id:1,
-        img: <Bitcoin />,
-        title: "Bridge Finance for Creators",
-        desc: "Whether you’re making the next viral YouTube movie or building your dream project, we fund your vision. Your story deserves to be told, and we’re here to help you tell it."
-    },
-    {
-        id:2,
         img: <BadgeDollarSign />,
+        image: "/images/works-5.webp",
         title: "Buy Now, Pay Later",
         desc: "Need tools, courses, or equipment to level up? Get what you need now and pay later with Fig Finance."
     },
     {
-        id:3,
+        id:2,
         img: <BookKey />,
+        image: "/images/works-6.webp",
         title: "Promotion and Learning Support",
         desc: "From promoting your work to investing in courses that sharpen your skills, Fig Finance helps you stay ahead in a competitive creative world"
     },
@@ -67,17 +64,37 @@ export const TestimonialData = [
 export const FaqDetails = [
     {
         value: "Item 1",
-        question: "what is your name",
-        answer: "you know my name",
+        question: "What is Fig Finance?",
+        answer: "Fig Finance is a financial technology company providing AI-driven bridge financing solutions for influencers and content creators. We help influencers access funds instantly to execute campaigns without waiting for delayed payments from brands and agencies.",
     },
     {
         value: "Item 2",
-        question: "what is your name",
-        answer: "you know my name",
+        question: "How does Fig Finance help influencers?",
+        answer: "Fig Finance offers immediate cash advances to influencers to cover campaign execution costs such as production, travel, and content creation. Our AI-driven system assesses an influencer’s earning potential and campaign contracts to offer financing with flexible repayment plans aligned with brand payment cycles.",
     },
     {
         value: "Item 3",
-        question: "what is your name",
-        answer: "you know my name",
+        question: "Why do influencers need financing solutions?",
+        answer: "Many brands and agencies operate on a 60-90 day payment cycle, leaving influencers without immediate funds to execute campaigns. Traditional financial institutions do not cater to this niche, making it difficult for creators to manage cash flow. Fig Finance bridges this gap by providing fast and accessible financing.",
+    },
+    {
+        value: "Item 4",
+        question: " Who can use Fig Finance’s services?",
+        answer: "Our primary users are influencers and content creators working on brand campaigns. We also partner with influencer marketing agencies and platforms, integrating our financing solutions into their systems via APIs.",
+    },
+    {
+        value: "Item 5",
+        question: " How does Fig Finance determine loan eligibility?",
+        answer: "We use AI-powered credit assessments that analyze an influencer’s campaign contracts, past earnings, and brand partnerships to determine eligibility and loan amounts. This ensures fair and data-driven financing decisions.",
+    },
+    {
+        value: "Item 6",
+        question: "  What are the repayment terms for influencers?",
+        answer: "Repayments are structured to align with brand payment cycles, ensuring minimal financial stress for influencers. Once the brand pays the influencer, a portion is automatically deducted to settle the loan.",
+    },
+    {
+        value: "Item 7",
+        question: "How can influencer marketing agencies partner with Fig Finance?",
+        answer: "Agencies can integrate Fig Finance’s API into their platforms, allowing influencers to apply for financing directly. This improves campaign execution efficiency and ensures creators have the necessary funds to deliver quality content on time.",
     },
 ]

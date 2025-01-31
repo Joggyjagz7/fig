@@ -4,9 +4,9 @@ import AccordionLayout from "./Accordion";
 const Faq = () => {
   return (
     <section>
-      <div className="md:w-1/2 w-11/12 mx-auto py-[50px]">
-        <h2 className="text-start heading-2">Frequently Asked Question</h2>
-        <div className="">
+      <div className=" w-11/12 mx-auto py-[80px] md:py-[50px]">
+        <h2 className="text-start heading-2 text-primary-black ">Frequently Asked Question</h2>
+        <div className="md:w-10/12 w-full mt-[50px] ">
           {FaqDetails.map((faq) => (
             <AccordionLayout {...faq} key={faq.value} />
           ))}

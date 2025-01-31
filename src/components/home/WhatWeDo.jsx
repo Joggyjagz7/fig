@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import { CardDetails } from "@/libs/data";
 import Image from "next/image";
 import { ChevronsRight } from "lucide-react";
+import FlipCard from "../FlipCard";
+
 
 const variants = {
   initial: {
@@ -26,13 +28,17 @@ const variants = {
   }),
 };
 const WhatWeDo = () => {
+ 
   return (
     <section className="w-full bg-accent-light  ">
-      <div className=" lg:w-10/13 w-11/12  lg:pt-[20px] py-[50px] mx-auto ">
-        <div className=" h-full ">
-          <div className="py-[50px]">
-            <h2 className="heading-2 text-center lg:text-start  ">What We Do</h2>
-            <div className="w-full  border  grid md:grid-cols-2 lg:grid-cols-4  gap-[20px] mt-[30px] lg:px-[20px] ">
+      <div className=" lg:w-10/13 w-11/12 lg:min-h-screen lg:py-[100px]  py-[50px] mx-auto ">
+        <div className=" h-full lg:flex items-center ">
+          <div className="py-[50px] lg:py-0 w-full">
+            <h2 className="heading-2 text-center lg:text-start text-primary-black ">
+              What We Do
+            </h2>
+            
+            <div className="w-full  grid md:grid-cols-2 lg:grid-cols-3  gap-[20px] mt-[30px] mx-auto ">
               {CardDetails.map((card) => (
                 <motion.div
                   variants={variants}
@@ -40,7 +46,7 @@ const WhatWeDo = () => {
                   whileInView="animate"
                   whileHover={{
                     scale: 1.02,
-                    boxShadow: "0 4px 20px rgba(0, 0, 0, 0.2)",
+                    // boxShadow: "0 4px 20px rgba(0, 0, 0, 0.2)",
                   }}
                   custom={card.id}
                   viewport={{
@@ -48,15 +54,10 @@ const WhatWeDo = () => {
                     amount: 0.75,
                   }}
                   key={card.id}
-                  className="w-11/12 md:w-auto md:col-span-1 mx-auto text-center rounded-[20px] p-[20px] bg-[#EFEFEF]"
+                  className="w-full md:w-full md:col-span-1 mx-auto text-center rounded-[20px]   h-full "
                 >
-                  <div className="flex justify-center items-center text-[100px] bg-accent-light  h-[50px] w-[50px] rounded-[50%] mx-auto mb-[20px] text-primary-purple">
-                    {card.img}
-                  </div>
-                  <div>
-                    <h4 className="heading-4 lg:mb-[10px] ">{card.title}</h4>
-                    <p className="text-[14px] font-[400] lg:text-[13px]">{card.desc}</p>
-                  </div>
+                  <FlipCard card={card} />
+                 
                 </motion.div>
               ))}
             </div>
