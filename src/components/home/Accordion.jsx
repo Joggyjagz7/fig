@@ -10,7 +10,7 @@ const AccordionLayout = ({ question, answer, value, id }) => {
     <div>
       <Accordion className="border rounded-[20px] px-[20px] py-[5px] mb-3 bg-light-bg" type="single" collapsible>
         <AccordionItem value={value}>
-          <AccordionTrigger className="text-[20px] font-[600] text-primary-black">{`${id}  ${question}`}</AccordionTrigger>
+          <AccordionTrigger className="text-[27px] font-[700]  text-primary-black">{`${id}  ${question}`}</AccordionTrigger>
           <AccordionContent className="text-[18px] font-[400] leading-[1.5em] text-primary-black">{answer}</AccordionContent>
         </AccordionItem>
       </Accordion>

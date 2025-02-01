@@ -2,13 +2,13 @@ import Image from "next/image";
 
 const TrackRecord = () => {
   return (
-    <section className="w-full pb-[30px] pt-[80px] md:py-[50px]  bg-accent-light ">
+    <section className="w-full pb-[30px] pt-[30px] md:py-[50px]   ">
       <div className="w-11/12 flex items-center    md:w-11/12 mx-auto md:min-h-screen lg:screen ">
         <div className="flex flex-col  w-full gap-[30px] lg:flex-row">
           <div className="lg:w-[70%] ">
             <div className="w-full">
               {" "}
-              <h2 className="heading-2 md:text-center text-primary-black lg:text-start">Our Track Record</h2>
+              <h2 className="heading-2 md:text-center text-primary-black lg:text-start">Our Numbers</h2>
             </div>
             <div className="flex text-primary-black mb-3 md:justify-center lg:justify-start  lg:w-11/12 ">
               <div className="w-[50%] md:w-[30%] lg:w-[50%] ">
@@ -61,9 +61,9 @@ const TrackRecord = () => {
           <div className=" w-full md:w-7/12 md:mx-auto h-[400px] lg:h-auto lg:w-1/2 ">
             <div className="h-full w-full relative">
               <Image
-                src="/images/Track.webp"
+                src="/images/Track-record.webp"
                 fill
-                className="object-cover rounded-[20px]"
+                className="object-cover rounded-[8px]"
               />
             </div>
           </div>
