@@ -45,7 +45,7 @@ button{
   @apply lg:text-[20px] text-[20px] leading-[1.1em] font-[700] mb-[5px];
 }
 .heading-4 {
-  @apply text-[16px]  font-[700]   leading-[1.4em];
+  @apply text-[21px]  font-[700]   leading-[1.4em];
 }
 .parapraph {
   @apply lg:text-[15px] font-[400] text-[16px] lg:leading-[1.5em] leading-[24px];

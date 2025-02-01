@@ -16,9 +16,10 @@ const FlipCard = ({ card }) => {
       height: "100%",
       background: "white",
       borderRadius: "10px",
+      boxShadow: "2px 2px 25px rgba(113, 113, 122, 0.3)",
     },
     back: {
-      boxShadow: "2px 2px 15px rgba(4, 151, 162, 0.3)",
+      boxShadow: "2px 2px 25px rgba(113, 113, 122, 0.3)",
       borderRadius: "10px",
       height: "100%",
     },

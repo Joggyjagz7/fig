@@ -30,7 +30,7 @@ const variants = {
 const WhatWeDo = () => {
  
   return (
-    <section className="w-full bg-accent-light  ">
+    <section className="w-full   ">
       <div className=" lg:w-10/13 w-11/12 lg:min-h-screen lg:py-[50px]  py-[0px] mx-auto ">
         <div className=" h-full lg:flex items-center ">
           <div className="py-[50px] lg:py-0 w-full">
@@ -53,7 +53,7 @@ const WhatWeDo = () => {
                     amount: 0.5,
                   }}
                   key={card.id}
-                  className="w-full md:w-full h-[400px]  md:col-span-1 mx-auto text-center rounded-[20px]   "
+                  className="w-full mb-5 md:w-full h-[400px]  md:col-span-1 mx-auto text-center rounded-[20px]   "
                 >
                   <FlipCard card={card} />
                  

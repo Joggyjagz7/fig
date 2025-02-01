@@ -61,7 +61,7 @@ const Works = () => {
         <div className=" mx-auto  lg:col-span-1 ">
           {/* timeline container */}
           <div className="">
-            <div className=" flex justify-between w-11/12 md:w-full lg:md:w-9/12 mx-auto border-l-2 border-l-black relative">
+            <div className=" flex justify-between w-11/12 md:w-full lg:md:w-9/12 mx-auto border-l-2 border-l-primary-color relative">
               <div className="w-[10%]"></div>
               <div className="flex justify-center items-center  h-[50px] w-[50px] rounded-[50%]  text-primary-purple bg-white absolute -left-[25px]">
                 <motion.h3
@@ -98,7 +98,7 @@ const Works = () => {
                 </p>
               </motion.div>
             </div>
-            <div className=" flex justify-between w-11/12 md:w-full lg:md:w-9/12 mx-auto border-l-2 border-l-black relative">
+            <div className=" flex justify-between w-11/12 md:w-full lg:md:w-9/12 mx-auto border-l-2 border-l-primary-color relative">
               <div className="w-[10%]"></div>
               <div className="flex justify-center items-center  h-[50px] w-[50px] rounded-[50%]  text-primary-purple bg-white absolute -left-[25px]">
                 <motion.h3
@@ -135,7 +135,7 @@ const Works = () => {
                 </p>
               </motion.div>
             </div>
-            <div className=" flex justify-between w-11/12 md:w-full lg:md:w-9/12 mx-auto border-l-2 border-l-black relative">
+            <div className=" flex justify-between w-11/12 md:w-full lg:md:w-9/12 mx-auto border-l-2 border-l-primary-color relative">
               <div className="w-[10%]"></div>
               <div className="flex justify-center items-center  h-[50px] w-[50px] rounded-[50%]  text-primary-purple bg-white absolute -left-[25px]">
                 <motion.h3
