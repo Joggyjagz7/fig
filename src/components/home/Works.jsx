@@ -212,7 +212,7 @@ const Works = () => {
             </div>
             <div className="lg:w-[80%] md:w-full w-11/12 mx-auto ">
               <button className="btn-colored gap-2 items-center flex">
-                Contact Sales
+                Apply For Funding
                 <ChevronsRight />
               </button>
             </div>
