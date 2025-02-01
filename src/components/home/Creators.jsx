@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 const Creators = () => {
   return (
-    <section className="w-full py-[50px] md:pb-[50px] md:pt-0   ">
+    <section className="w-full py-[50px] md:pb-[50px] md:pt-[20px]   ">
       <div className="h-auto md:h-screen mx-auto relative">
         <div className=" px-[10px] z-[999]  h-full md:justify-center flex flex-col   mx-auto  w-full rounded-[20px] ">
           <div className="relative w-[300px]   h-[100px] md:w-[400px] md:h-[120px] mx-auto">
