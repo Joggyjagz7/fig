@@ -1,6 +1,6 @@
 "use client";
 
-import { poppins } from "@/app/fonts";
+import { dm_sans, poppins } from "@/app/fonts";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
@@ -91,7 +91,7 @@ const Navbar = () => {
         </AnimatePresence>  
 
         <div
-          className={`lg:flex gap-[20px] hidden  text-[15px] font-[600] ${poppins.className} `}
+          className={`lg:flex gap-[20px] hidden  text-[15px] font-[600] ${dm_sans.className} `}
         >
           <Link href="#">Products</Link>
           <Link href="#">Use Cases</Link>
@@ -104,7 +104,7 @@ const Navbar = () => {
               isScrolled ? "btn" : "btn-colored"
             }`}
           >
-            Contact Us
+            Contact Sales
           </button>
         </div>
 

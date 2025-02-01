@@ -16,16 +16,23 @@ const MySwiper = () => {
       className="mySwiper h-[50px] inline-block rounded-[10px] p-[5px]    "
     >
       <SwiperSlide className="h-full w-full  ">
-        <p className="font-[700]">Kwame</p>
+        <p className="font-[700]">Lethabo
+        </p>
       </SwiperSlide>
       <SwiperSlide className="h-full flexw-full ">
-        <p className="font-[700]">Ejiro</p>
-      </SwiperSlide>
-      <SwiperSlide className="h-full w-full  ">
-        <p className="font-[700]">Busayo</p>
-      </SwiperSlide>
-      <SwiperSlide className="h-full w-full  ">
         <p className="font-[700]">Anyango</p>
+      </SwiperSlide>
+      <SwiperSlide className="h-full w-full  ">
+        <p className="font-[700]">Kofo
+        </p>
+      </SwiperSlide>
+      <SwiperSlide className="h-full w-full  ">
+        <p className="font-[700]">Amani
+        </p>
+      </SwiperSlide>
+      <SwiperSlide className="h-full w-full  ">
+        <p className="font-[700]">Seun
+        </p>
       </SwiperSlide>
     </Swiper>
   );

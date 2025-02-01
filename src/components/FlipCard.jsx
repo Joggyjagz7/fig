@@ -19,8 +19,9 @@ const FlipCard = ({ card }) => {
     },
     back: {
       boxShadow: "2px 2px 15px rgba(4, 151, 162, 0.3)",
-      borderRadius: "10px"
-    }
+      borderRadius: "10px",
+      height: "100%",
+    },
   };
   const containerStyles = {
     height: "100%",
@@ -35,12 +36,15 @@ const FlipCard = ({ card }) => {
       cardStyles={cardStyles}
       flipDirection="horizontal"
     >
-      <div className="w-full flex-col  flex gap-[20px] pb-5 h-full">
+      <div
+        onClick={handleFlip}
+        className="w-full flex-col  flex gap-[20px] pb-5 h-full"
+      >
         <div className="flex  w-full justify-center items-center  bg-accent-light  h-[500px] relative rounded-[10px] mx-auto mb-[5px] text-primary-purple">
           <Image
             src={card.image}
             fill
-            className="object-cover  "
+            className="object-cover object-[0%_25%]  "
             style={styles}
           />
         </div>
@@ -48,27 +52,31 @@ const FlipCard = ({ card }) => {
           {card.title}
         </h4>
         <div>
-          <button className="btn-normal" onClick={handleFlip}>
+          <button className="btn-colored" onClick={handleFlip}>
             See More
           </button>
         </div>
       </div>
 
-      <div className="h-full pb-5 flex  flex-col justify-center w-11/12 mx-auto  ">
-        {/* Centered Icon */}
-
+      <div
+        onClick={handleFlip}
+        className="h-full pb-5 flex flex-col justify-center w-11/12 mx-auto  "
+      >
+      
         {/* Centered Description */}
-        <div className="flex-1 flex flex-col justify-center w-11/12 mx-auto items-center  ">
+        <div className="flex-1  flex flex-col justify-center w-11/12 mx-auto items-center  ">
           <div className="flex justify-center items-center text-[100px] bg-primary-color h-[50px] w-[50px] rounded-full  text-white  mx-auto mb-5">
             {card.img}
           </div>
-          <p className="text-[14px] font-[400] text-primary-black lg:text-[13px]">{card.desc}</p>
+          <p className="text-[16px] font-[400] text-primary-black lg:text-[13px]">
+            {card.desc}
+          </p>
         </div>
 
         {/* Button at the Bottom */}
-        <div className="mt-auto">
-          <button className="btn-normal" onClick={handleFlip}>
-            See  Less
+        <div className="mt-auto ">
+          <button className="btn-colored" onClick={handleFlip}>
+            See Less
           </button>
         </div>
       </div>

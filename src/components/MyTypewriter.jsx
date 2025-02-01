@@ -3,7 +3,7 @@ import { Typewriter } from 'react-simple-typewriter'
 const MyTypewriter = () => {
   return (
     <Typewriter
-    words={["Busayo", "Kwame", "Anyango", "Ejiro"]}
+    words={["Seun", "Amani", "Kofo", "Lethabo","Anyango "]}
     loop={false}
     // cursor
     cursorStyle='_'
