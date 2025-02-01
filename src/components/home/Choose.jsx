@@ -4,7 +4,7 @@ import { ThumbsUp } from "lucide-react";
 
 const Choose = () => {
   return (
-    <section className="bg-primary-color relative">
+    <section className="bg-primary-color choose-bg relative">
       <div className="lg:h-screen flex lg:justify-center py-[50px] flex-col gap-[20px] md:gap-[0px] ">
         <div className="flex  justify-start  w-11/12 mx-auto items-center">
           <h2 className="heading-2 text-white  ">Why Choose Us</h2>
@@ -28,7 +28,7 @@ const Choose = () => {
               </p>
             </div>
           </div>
-          <div className="mb-[30px] md:w-1/2 flex gap-[20px]">
+          <div className="mb-[30px] md:w-1/2 lg:w-1/3 flex gap-[20px]">
             <div className="  py-[6px] ">
               <img
                 src="/images/thumbs.svg"
@@ -46,7 +46,7 @@ const Choose = () => {
               </p>
             </div>
           </div>
-          <div className=" md:w-1/2  flex gap-[20px]">
+          <div className=" md:w-1/2 lg:w-1/3  flex gap-[20px]">
             <div className="  py-[6px] ">
               <img
                 src="/images/thumbs.svg"

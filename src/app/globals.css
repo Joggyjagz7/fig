@@ -77,30 +77,17 @@ button{
     background-repeat: no-repeat;
   }
 }
-/* styles */
-.choose-bg {
-  background-image: url("/images/choose-bg-small.webp");
-  background-size: cover;
-  background-position: center;
-  /* background-attachment: fixed; */
-  background-repeat: no-repeat;
-  transform: translateZ(0);
-}
-@media screen and (min-width: 768px) {
-  .choose-bg {
-    background-image: url("/images/choose-bg.webp");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-  }
-}
-/* .creators-bg{
-  background-image: url("/images/graph.png");
-  background-size: 30%;
-  background-position: left top;
-  background-repeat: no-repeat;
 
-} */
+@media screen and (min-width: 768px) {
+  /* styles */
+.choose-bg {
+  background-image: url("/images/elegant.png");
+  background-size: 30%;
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+}
+
 .choose-bg > div {
   background-color: rgba(0, 0, 0, 0.3);
 }
