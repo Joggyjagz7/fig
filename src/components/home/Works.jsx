@@ -30,7 +30,7 @@ export const variants = {
 
 const Works = () => {
   return (
-    <section className="w-full relative pt-[100px]  pb-0 md:py-[60px]   overflow-hidden">
+    <section className="w-full relative py-[50px]  md:py-[60px]   overflow-hidden">
       <h2
         className={`heading-2 text-primary-black text-start w-11/12 md:text-center lg:text-start lg:w-11/12 mx-auto`}
       >
@@ -60,7 +60,7 @@ const Works = () => {
 
         <div className=" mx-auto  lg:col-span-1 ">
           {/* timeline container */}
-          <div>
+          <div className="">
             <div className=" flex justify-between w-11/12 md:w-full lg:md:w-9/12 mx-auto border-l-2 border-l-black relative">
               <div className="w-[10%]"></div>
               <div className="flex justify-center items-center  h-[50px] w-[50px] rounded-[50%]  text-primary-purple bg-white absolute -left-[25px]">
@@ -208,26 +208,16 @@ const Works = () => {
                   Pay us back when the cash starts flowing. We work with
                   flexible payment options.
                 </p>
-                <motion.div
-                  initial={{ opacity: 0, y: 100 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{
-                    duration: 1,
-                    delay: 1,
-                    type: "spring",
-                    bounce: 0.6,
-                  }}
-                  viewport={{ once: true, amount: 0.5 }}
-                  className="mt-[30px]  "
-                >
-                  <button className="btn-colored gap-2 items-center flex">
-                    Contact Sales
-                    <ChevronsRight />
-                  </button>
-                </motion.div>
               </motion.div>
             </div>
+            <div className="lg:w-[80%] md:w-full w-11/12 mx-auto ">
+              <button className="btn-colored gap-2 items-center flex">
+                Contact Sales
+                <ChevronsRight />
+              </button>
+            </div>
           </div>
+
           {/* timeline ends here  */}
         </div>
       </div>
