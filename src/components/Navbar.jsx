@@ -84,7 +84,7 @@ const Navbar = () => {
                 src="/images/logo.png"
                 alt="fig finance logo"
                 fill
-                className="object-cover"
+                className="object-contain"
               />
             </motion.div>
           )}
