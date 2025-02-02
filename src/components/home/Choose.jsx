@@ -10,7 +10,7 @@ const Choose = () => {
           <h2 className="heading-2 text-white  ">Why Choose Us</h2>
         </div>
         <div className="w-11/12 mx-auto ">
-          <div className=" mb-[30px] md:w-1/2 lg:w-1/3  flex gap-[20px]">
+          <div className=" mb-[30px] md:w-1/2 lg:w-1/3 w-11/12 flex gap-[20px]">
             <div className="  py-[6px] ">
               <img
                 src="/images/thumbs.svg"
@@ -28,7 +28,7 @@ const Choose = () => {
               </p>
             </div>
           </div>
-          <div className="mb-[30px] md:w-1/2 lg:w-1/3 flex gap-[20px]">
+          <div className="mb-[30px] md:w-1/2 lg:w-1/3 w-11/12 flex gap-[20px]">
             <div className="  py-[6px] ">
               <img
                 src="/images/thumbs.svg"
@@ -46,7 +46,7 @@ const Choose = () => {
               </p>
             </div>
           </div>
-          <div className=" md:w-1/2 lg:w-1/3  flex gap-[20px]">
+          <div className=" md:w-1/2 lg:w-1/3 w-11/12 flex gap-[20px]">
             <div className="  py-[6px] ">
               <img
                 src="/images/thumbs.svg"

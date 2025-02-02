@@ -40,7 +40,7 @@ const Creators = () => {
               bounce: 0.4,
             }}
             viewport={{ once: true, amount: 0.5 }}
-            className="text-[25px] md:text-[20px] text-primary-black font-[400] text-center mx-auto md:w-[70%] lg:w-[46%] w-[90%]"
+            className="text-[15px] md:text-[20px] text-primary-black font-[400] text-center mx-auto md:w-[70%] lg:w-[46%] w-[90%]"
           >
             Your creativity knows no boundary. Neither should the resources to
             bring it to life.

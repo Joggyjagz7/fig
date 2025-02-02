@@ -91,8 +91,8 @@ const Works = () => {
                 viewport={{ once: true, amount: 0.5 }}
                 className="min-h-[100px] mb-5 pt-[10px] w-[89%] md:w-full"
               >
-                <h3 className="font-bold text-lg mb-2">Share Your Vision</h3>
-                <p className="text-sm font-[400] text-gray-700">
+                <h3 className="heading-4 mb-2">Share Your Vision</h3>
+                <p className="paragraph text-primary-black">
                   Share your idea, your project, and your dream. We’ll help you
                   fund it.
                 </p>
@@ -128,8 +128,8 @@ const Works = () => {
                 viewport={{ once: true, amount: 0.5 }}
                 className="min-h-[100px] mb-5 pt-[10px] w-[89%]"
               >
-                <h3 className="font-bold text-lg mb-2">Get Funded Fast</h3>
-                <p className="text-sm font-[400] text-gray-700">
+                <h3 className="heading-4 mb-2">Get Funded Fast</h3>
+                <p className="paragraph text-primary-black">
                   Blink and you’ll have the funds. We move quickly. Once
                   approved, the funds are in your account and ready to go.
                 </p>
@@ -165,10 +165,10 @@ const Works = () => {
                 viewport={{ once: true, amount: 0.5 }}
                 className="min-h-[100px] mb-5 pt-[10px] w-[89%]"
               >
-                <h3 className="font-bold text-lg mb-2">
+                <h3 className="heading-4 mb-2">
                   Create Your Masterpiece
                 </h3>
-                <p className="text-sm font-[400] text-gray-700">
+                <p className="paragraph text-primary-black">
                   Shoot. Edit. Post. Let the world see your brilliance.
                 </p>
               </motion.div>
@@ -203,8 +203,8 @@ const Works = () => {
                 viewport={{ once: true, amount: 0.5 }}
                 className="min-h-[100px] pt-[10px] w-[89%]"
               >
-                <h3 className="font-bold text-lg mb-2">Repay On Your Terms</h3>
-                <p className="text-sm font-[400] text-gray-700 mb-10">
+                <h3 className="heading-4 mb-2">Repay On Your Terms</h3>
+                <p className="paragraph text-primary-black mb-10">
                   Pay us back when the cash starts flowing. We work with
                   flexible payment options.
                 </p>
@@ -213,7 +213,7 @@ const Works = () => {
             <div className="lg:w-[80%] md:w-full w-11/12 mx-auto ">
               <button className="btn-colored gap-2 items-center flex">
                 Apply For Funding
-                <ChevronsRight />
+                {/* <ChevronsRight /> */}
               </button>
             </div>
           </div>

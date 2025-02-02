@@ -15,7 +15,7 @@ const TrackRecord = () => {
                 <h3 className="font-[7000] text-[35px] lg:text-[50px] ">
                   ₦2M+
                 </h3>
-                <p className="font-[400] text-[16px]">
+                <p className="font-[400] w-11/12 text-[16px]">
                   {" "}
                   Funded to support creators and influencers.
                 </p>
@@ -24,7 +24,7 @@ const TrackRecord = () => {
                 <h3 className="font-[7000] text-[35px] lg:text-[50px] ">
                   15+{" "}
                 </h3>
-                <p className="font-[400] text-[16px]">
+                <p className="font-[400] w-11/12 text-[16px]">
                   {" "}
                   Projects funded across Africa.
                 </p>
@@ -33,7 +33,7 @@ const TrackRecord = () => {
             <div className="flex text-primary-black mb-3 md:justify-center lg:justify-start lg:w-11/12">
               <div className="w-[50%] md:w-[30%] lg:w-[50%] ">
                 <h3 className="font-[7000] text-[35px] lg:text-[50px] ">98%</h3>
-                <p className="font-[400] text-[16px]">
+                <p className="font-[400] w-11/12 text-[16px]">
                   {" "}
                   Approval rate for eligible creators.
                 </p>
@@ -42,7 +42,7 @@ const TrackRecord = () => {
                 <h3 className="font-[7000] text-[35px] lg:text-[50px] ">
                   12+{" "}
                 </h3>
-                <p className="font-[400] text-[16px]">
+                <p className="font-[400] w-11/12 text-[16px]">
                   {" "}
                   Creators empowered to level up their craft.
                 </p>
@@ -51,7 +51,7 @@ const TrackRecord = () => {
             <div className="flex text-primary-black md:justify-center lg:justify-start mb-3">
               <div className="w-[50%] md:w-[30%] lg:w-[50%]  ">
                 <h3 className="font-[7000] text-[35px] lg:text-[50px]">98%</h3>
-                <p className="font-[400] text-[16px]">
+                <p className="font-[400] w-11/12 text-[16px]">
                   {" "}
                   Repayment flexibility rating from satisfied users.
                 </p>
