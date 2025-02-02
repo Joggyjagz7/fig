@@ -59,10 +59,11 @@ const TrackRecord = () => {
             </div>
           </div>
           <div className=" w-full md:w-7/12 md:mx-auto h-[400px] lg:h-auto lg:w-1/2 ">
-            <div className="h-full w-full relative">
+            <div className="h-full  w-full relative">
               <Image
-                src="/images/Track-record.webp"
+                src="/images/track-record.webp"
                 fill
+                alt="our track record"
                 className="object-cover rounded-[8px]"
               />
             </div>

@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import "./globals.css";
 import { dm_sans, nunito_sans} from "./fonts";
+import Footer from "@/components/Footer";
 
 export default function RootLayout({ children }) {
   return (
@@ -11,6 +12,7 @@ export default function RootLayout({ children }) {
         </div>
 
         {children}
+        <Footer />
       </body>
     </html>
   );
