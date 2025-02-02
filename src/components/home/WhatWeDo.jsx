@@ -50,7 +50,7 @@ const WhatWeDo = () => {
                   custom={card.id}
                   viewport={{
                     once: true,
-                    amount: 0.5,
+                    amount: 0.25,
                   }}
                   key={card.id}
                   className="w-full mb-5 md:w-full h-[400px]  md:col-span-1 mx-auto text-center rounded-[20px]   "

@@ -8,7 +8,7 @@ export const OpenSans = Open_Sans({
 
 export const dm_sans = DM_Sans({
     subsets: ['latin'],
-    weight: ['400', '700', '800'], 
+    weight: ['400', '700', '800', "900"], 
     style: ['normal', 'italic'], 
   });
 export const nunito_sans = Nunito_Sans({
