@@ -15,7 +15,7 @@ const Choose = () => {
               <img
                 src="/images/thumbs.svg"
                 alt=""
-                className="w-[15px] h-[15px] rounded-[50%]"
+                className="w-[10px] h-[10px] rounded-[50%]"
               />
             </div>
             <div className=" flex-1 ">
@@ -33,7 +33,7 @@ const Choose = () => {
               <img
                 src="/images/thumbs.svg"
                 alt=""
-                className="w-[15px] h-[15px] rounded-[50%]"
+                className="w-[10px] h-[10px] rounded-[50%]"
               />
             </div>
             <div className=" flex-1 ">
@@ -51,7 +51,7 @@ const Choose = () => {
               <img
                 src="/images/thumbs.svg"
                 alt=""
-                className="w-[15px] h-[15px] rounded-[50%]"
+                className="w-[10px] h-[10px] rounded-[50%]"
               />
             </div>
             <div className=" flex-1 ">
