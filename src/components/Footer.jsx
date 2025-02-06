@@ -4,56 +4,111 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="w-full md:py-[100px] bg-primary-color py-[40px] ">
-      <div className=" h-full md:flex flex-col gap-[50px]  w-11/12 mx-auto">
-        <div className="md:flex mb-[20px]">
-          <div className="w-9/12 md:w-[50%]  lg:w-[60%] mb-[30px]">
+    <footer className="w-full md:pt-[100px] bg-primary-color pt-[40px]  ">
+      <div className=" h-full  md:flex flex-col gap-[50px]  w-11/12 mx-auto">
+        <div className="md:flex mb-[20px] md:gap-[40px] md:justify-between ">
+          <div className="w-9/12 md:w-[35%]   mb-[30px]">
             <div className="relative w-[150px] h-[50px] object-contain">
-              <Image src="/images/logo-white-2.png" alt="logo for footer" fill className="object-contain"/>
+              <Image
+                src="/images/logo-white-2.png"
+                alt="logo for footer"
+                fill
+                className="object-contain"
+              />
             </div>
-            <p className="text-[14px] font-[400] leading-[1.5em] text-white md:w-[80%] lg:w-[50%]">
+            <p className="footer-paragraph md:w-[80%] lg:w-[90%]">
               Your creativity knows no boundary. Neither should the resources to
               bring it to life.
             </p>
-          </div>
-          <div className="md:flex w-[50%] lg:w-[40%] justify-between lg:justify-start lg:gap-[50px] ">
-            <div className="mb-[30px]">
-              <h4 className=" mb-2 text-white text-[16px] font-[700] ">Fig Finance</h4>
-              <p className="text-[14px] font-[400] leading-[1.5em] text-white mb-1">
-                Terms & Conditions
-              </p>
-              <p className="text-[14px] font-[400] leading-[1.5em] text-white">Privacy Policy</p>
+            <div className="flex  mt-[20px] md:w-[50%] justify-between md:gap-[20px]">
+              <p className="footer-paragraph">Apply</p>
+              <p className="footer-paragraph">Get Funded</p>
+              <p className="footer-paragraph">Repay</p>
             </div>
-            <div className="mb-[30px]">
-              <h4 className=" mb-2 text-white text-[16px] font-[700]">About Us</h4>
-              <p className="text-[14px] font-[400] leading-[1.5em] text-white mb-1">Contact Us</p>
-              <p className="text-[14px] font-[400] leading-[1.5em] text-white">Support</p>
+          </div>
+          <div className="md:flex w-full md:w-1/2 lg:justify-start  justify-between  lg:gap-[50px] ">
+            <div className="mb-[30px] md:flex-1">
+              <h4 className=" mb-3 text-white text-[16px] font-[700] ">
+                Company
+              </h4>
+              <p className="footer-paragraph mb-2">About Us</p>
+              <p className="footer-paragraph mb-2">Faq</p>
+              <p className="footer-paragraph">Apply For Funding</p>
+            </div>
+            <div className="mb-[30px] md:flex-1">
+              <h4 className=" mb-3 text-white text-[16px] font-[700]">Legal</h4>
+              <p className="footer-paragraph mb-2">Terms Of Service</p>
+              <p className="footer-paragraph mb-2">Privacy Policy</p>
+              <p className="footer-paragraph">Disclosure</p>
+            </div>
+            <div className="mb-[30px] md:flex-1">
+              <h4 className=" mb-3 text-white text-[16px] font-[700]">
+                Contact Us
+              </h4>
+              <p className="mb-2">
+                {" "}
+                <a
+                  className="footer-paragraph"
+                  href="mailto:hello@figfinance.co"
+                >
+                  hello@figfinance.co
+                </a>
+              </p>
+              <p className="footer-paragraph mb-2">
+                Highway Heights, 15th Floor Marcus Garvey Rd, Nairobi, Kenya
+              </p>
+              {/* <p className="footer-paragraph">Disclosure</p> */}
             </div>
           </div>
         </div>
         {/* second row */}
         <div className=" flex flex-col md:flex-row justify-between">
-          <div className="flex justify-evenly mb-[30px] md:w-[50%] md:justify-start md:gap-[20px]">
-            <p className="text-[14px] font-[400] leading-[1.5em] text-white">Apply</p>
-            <p className="text-[14px] font-[400] leading-[1.5em] text-white">
-              Get Funded
+          <div className=" mb-[30px] md:w-[50%] ">
+            <p className="text-gray-300/90   text-center md:text-start text-[14px] font-[400] leading-[1.5em]">
+              @2025 Fig Technologies. All Right Reserved
             </p>
-            <p className="text-[14px] font-[400] leading-[1.5em] text-white">Repay</p>
           </div>
-          <div className="flex justify-evenly md:justify-end md:gap-[20px] mb-[30px] md:w-[50%]">
-          <FaFacebookF className="text-white"/>
-          <FaXTwitter className="text-white"/>
-          <FaLinkedinIn className="text-white"/>
-          <FaInstagram className="text-white"/>
+
+          <div className="flex justify-evenly md:hidden md:justify-end md:gap-[20px] mb-[30px] md:w-[50%]">
+            <FaFacebookF className="text-gray-300/90" />
+
+            <FaXTwitter className="text-gray-300/90" />
+            <FaLinkedinIn className="text-gray-300/90" />
+            <FaInstagram className="text-gray-300/90" />
+          </div>
+
+          <div className=" hidden md:flex justify-evenly md:justify-end md:gap-[20px] mb-[30px] md:w-[50%]">
+            <div className="md:flex gap-1 items-center">
+              <FaFacebookF className="text-gray-300/90" />
+              <span className="text-gray-300/90 text-[14px] font-[400] ">
+                Facebook
+              </span>
+            </div>
+            <div className="md:flex gap-1 items-center">
+              <FaXTwitter className="text-gray-300/90" />
+              <span className="text-gray-300/90 text-[14px] font-[400] ">
+                Twitter
+              </span>
+            </div>
+            <div className="md:flex gap-1 items-center">
+              <FaLinkedinIn className="text-gray-300/90" />
+              <span className="text-gray-300/90 text-[14px] font-[400] ">
+                LinkedIn
+              </span>
+            </div>
+            <div className="md:flex gap-1 items-center">
+              <FaInstagram className="text-gray-300/90" />
+              <span className="text-gray-300/90 text-[14px] font-[400] ">
+                Instagram
+              </span>
+            </div>
           </div>
         </div>
-        <div>
-          <div className="">
-            <p className="text-gray-200 paragraph text-center text-[14px] font-[400] leading-[1.5em]">
-              Copyright © 2024 | Fig Finance | All Rights Reserved
-            </p>
-          </div>
-          <div></div>
+        <div className=" w-full mt-auto h-[40vh]">
+            <div className="relative w-full h-full">
+            <Image src="/images/logo.png" alt="fig finance" fill className="object-cover" />
+
+            </div>
         </div>
       </div>
     </footer>
