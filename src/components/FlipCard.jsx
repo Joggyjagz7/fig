@@ -69,7 +69,7 @@ const FlipCard = ({ card }) => {
           <div className="flex justify-center items-center text-[100px] bg-primary-color h-[50px] w-[50px] rounded-full  text-white  mx-auto mb-5">
             {card.img}
           </div>
-          <p className="text-[16px] font-[400] text-primary-black lg:text-[13px]">
+          <p className="text-[16px] font-[400] text-primary-black lg:text-[15px]">
             {card.desc}
           </p>
         </div>

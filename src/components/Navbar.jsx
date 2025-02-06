@@ -65,7 +65,7 @@ const Navbar = () => {
               className="h-[70px] w-[170px]  relative"
             >
               <Image
-                src="/images/logo-white.svg"
+                src="/images/logo-white-2.png"
                 alt="fig finance logo"
                 fill
                 className="object-contain"
