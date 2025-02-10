@@ -104,9 +104,10 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className=" w-full mt-auto h-[40vh]">
+        <div className=" w-full mt-[30px] md:mt-[20px] h-[20vh] md:h-[30vh] lg:h-[40vh] ">
             <div className="relative w-full h-full">
-            <Image src="/images/logo.png" alt="fig finance" fill className="object-cover" />
+            <Image src="/images/fig-footer.png" alt="fig finance" fill className="hidden  md:object-contian md:block" />
+            <Image src="/images/fig-footer-mobile.png" alt="fig finance" fill className="  md:object-contian md:hidden" />
 
             </div>
         </div>

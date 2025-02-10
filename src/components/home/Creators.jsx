@@ -26,7 +26,7 @@ const Creators = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, type: "spring", bounce: 0.6 }}
             viewport={{ once: true, amount: 0.5 }}
-            className={`lg:text-[60px] md:text-[50px] text-[40px] leading-[1.2em] font-[700] mb-[30px] lg:mb-3 text-center   text-primary-black  `}
+            className={`lg:text-[60px] md:text-[50px] text-[40px] leading-[1.2em] font-[700] mb-3 text-center   text-primary-black  `}
           >
             For <span className="italic text-primary-color"> Creators</span>  And <span className="italic text-primary-color">Influencers </span>  <br /> Who Dream Big💡
           </motion.h2>
