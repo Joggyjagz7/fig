@@ -36,7 +36,7 @@ button{
   @apply px-[24px] py-[11px] rounded-[10px] text-center bg-white   text-primary-color  text-[16px] font-[700]   duration-500 transition transform active:scale-95 focus:outline-none border border-primary-color tracking-[0.5px];
 }
 .heading-1{
-  @apply lg:text-[60px] md:text-[50px] text-primary-black text-[40px]  leading-[1.2em] font-[700]
+  @apply lg:text-[60px] md:text-[50px] text-primary-black text-[40px]  leading-[1.1em] font-[700]
 }
 .heading-2 {
   @apply lg:text-[45px] md:text-[35px] text-[30px] leading-[1.2em] font-[700] mb-[30px];
