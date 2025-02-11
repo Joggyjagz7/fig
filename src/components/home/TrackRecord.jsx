@@ -3,7 +3,7 @@ import Image from "next/image";
 const TrackRecord = () => {
   return (
     <section className="w-full pb-[30px] bg-[#F9FAFB] pt-[30px] md:py-[50px]   ">
-      <div className="w-11/12 flex items-center    md:w-11/12 mx-auto md:min-h-screen lg:h-auto border-4 border-red-500 ">
+      <div className="w-11/12 flex items-center    md:w-11/12 mx-auto  lg:h-auto  ">
         <div className="flex flex-col  w-full gap-[30px] lg:flex-row">
           <div className="lg:w-[70%] ">
             <div className="w-full">
