@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <div className="w-full  md:pb-0 ">
       <div className=" md:grid hero-bg relative  lg:pb-0 pt-[100px] md:pt-[120px] grid-cols-1 md:grid-cols-2 w-full md:w-11/12 min-h-screen lg:grid-cols-12   mx-auto ">
-        <div className=" w-11/12 mx-auto   md:pt-[40px] lg:pb-[40px] md:text-center lg:text-start md:w-9/12 md:mx-auto lg:w-full lg:mx-0  md:col-span-2   lg:flex flex-col  lg:justify-start lg:col-span-7">
+        <div className=" w-11/12 mx-auto   md:pt-[40px] lg:pb-[40px] md:text-center lg:text-start md:w-9/12 md:mx-auto lg:w-full lg:mx-0  md:col-span-2   lg:flex flex-col  lg:justify-center lg:col-span-7">
           <h4 className="heading-4   text-primary-color mb-2 ">
             Trusted By 100+ Creators
           </h4>

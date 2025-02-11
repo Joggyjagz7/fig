@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Creators = () => {
   return (
     <section className="w-full py-[50px] md:pb-[10px] md:pt-[20px]   ">
-      <div className="h-auto md:h-screen mx-auto relative">
+      <div className="h-auto border-4 border-red-500 md:h-screen mx-auto relative">
         <div className=" px-[10px] z-[999]  h-full md:justify-center flex flex-col   mx-auto  w-full rounded-[20px] ">
           <motion.div
           initial={{ opacity: 0, scale: 0.3 }}
