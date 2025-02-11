@@ -5,7 +5,7 @@ import { ThumbsUp } from "lucide-react";
 const Choose = () => {
   return (
     <section className="bg-primary-color choose-bg relative">
-      <div className="lg:h-screen flex lg:justify-center py-[50px] flex-col gap-[20px] md:gap-[0px] ">
+      <div className=" flex lg:justify-center py-[50px] flex-col gap-[20px] md:gap-[0px] ">
         <div className="flex  justify-start  w-11/12 mx-auto items-center">
           <h2 className="heading-2 text-white  ">Why Choose Us</h2>
         </div>
