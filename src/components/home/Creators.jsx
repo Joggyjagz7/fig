@@ -4,15 +4,15 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 const Creators = () => {
   return (
-    <section className="w-full py-[50px] md:pb-[10px] md:pt-[20px]   ">
+    <section className="w-full py-[50px] md:pb-[10px] md:pt-[20px] lg:py-0  ">
       <div className="h-auto border-4 border-red-500 md:h-screen mx-auto relative">
-        <div className=" px-[10px] z-[999]  h-full md:justify-center flex flex-col   mx-auto  w-full rounded-[20px] ">
+        <div className=" px-[10px] z-[999] border-4 border-red-500 h-full md:justify-center flex flex-col   mx-auto  w-full rounded-[20px] ">
           <motion.div
           initial={{ opacity: 0, scale: 0.3 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, type: "spring", bounce: 0.6 }}
           viewport={{ once: true, amount: 0.5 }}
-          className="relative w-[70px] mb-4  h-[70px] md:w-[70px] lg:w-[80px] lg:h-[80px] md:h-[70px] mx-auto">
+          className="relative w-[70px] mb-4 border-4 border-red-500  h-[70px] md:w-[70px] lg:w-[80px] lg:h-[80px] md:h-[70px] mx-auto">
             <Image
               src="/images/logo-icon.png"
               fill
