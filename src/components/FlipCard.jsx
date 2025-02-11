@@ -44,6 +44,7 @@ const FlipCard = ({ card }) => {
         <div className="flex  w-full justify-center items-center  bg-accent-light  h-[500px] relative rounded-[10px] mx-auto mb-[5px] text-primary-purple">
           <Image
             src={card.image}
+            alt="img"
             fill
             className="object-cover object-[0%_25%]  "
             style={styles}
