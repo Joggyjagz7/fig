@@ -12,7 +12,7 @@ const FigHero = () => {
           </h4>
           <h1 className={`heading-1`}>
             Financing for{" "}
-            <span className="text-primary-color">Influencers </span> and{" "}
+            <span className="text-primary-color">Influencers </span> and {" "}
             <span className="text-primary-color">Creators </span> in Africa
           </h1>
           <span className="text-[25px] font-[400] lg:flex hidden md:mt-3 text-primary-black ">
