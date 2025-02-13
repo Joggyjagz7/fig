@@ -31,11 +31,7 @@ const WhatWeDo = () => {
  
   return (
     <section className="w-full   ">
-      <div className=" lg:w-10/13 w-11/12 lg:min-h-screen lg:py-[50px]  py-[0px] mx-auto ">
-        <div className=" h-full lg:flex items-center ">
-          <div className="py-[50px] lg:py-0 w-full">
-            
-            
+      <div className=" lg:w-10/13 w-11/12  lg:pb-[50px]  py-[0px] mx-auto ">
             <div className="w-full  grid md:grid-cols-2 lg:grid-cols-3  gap-[20px] mt-[30px] mx-auto ">
               {CardDetails.map((card) => (
                 <motion.div
@@ -58,8 +54,6 @@ const WhatWeDo = () => {
                 </motion.div>
               ))}
             </div>
-          </div>
-        </div>
       </div>
     </section>
   );
