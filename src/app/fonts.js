@@ -1,13 +1,12 @@
-import {Merriweather, Poppins} from "next/font/google"
+import { DM_Sans, Nunito_Sans} from "next/font/google"
 
-export const merriweather = Merriweather({
-  subsets: ['latin'],
-  weight: ['900'], // Select weights as needed
-  style: ['normal', 'italic'], // Optional styles
-});
-
-export const poppins = Poppins({
+export const dm_sans = DM_Sans({
     subsets: ['latin'],
-    weight: ['400'], // Select weights as needed
-    style: ['normal', 'italic'], // Optional styles
+    weight: ['400', '700', '800', "900"], 
+    style: ['normal', 'italic'], 
+  });
+export const nunito_sans = Nunito_Sans({
+    subsets: ['latin'],
+    weight: ['400', '700', '800'], 
+    style: ['normal', 'italic'], 
   });
