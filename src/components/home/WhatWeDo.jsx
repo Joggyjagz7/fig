@@ -34,9 +34,7 @@ const WhatWeDo = () => {
       <div className=" lg:w-10/13 w-11/12 lg:min-h-screen lg:py-[50px]  py-[0px] mx-auto ">
         <div className=" h-full lg:flex items-center ">
           <div className="py-[50px] lg:py-0 w-full">
-            <h2 className="heading-2 text-start text-primary-black ">
-              What We Do
-            </h2>
+            
             
             <div className="w-full  grid md:grid-cols-2 lg:grid-cols-3  gap-[20px] mt-[30px] mx-auto ">
               {CardDetails.map((card) => (
