@@ -19,6 +19,6 @@ export const open_sans = Open_Sans({
 const bricolageGrotesque = Bricolage_Grotesque({
   subsets: ['latin'],
   weight: ['400', '500', '700'],
-  style: ['normal', 'italic'],
+  style: ['normal'],
   display: 'swap',
 });
