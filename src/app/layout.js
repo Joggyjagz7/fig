@@ -3,6 +3,10 @@ import "./globals.css";
 import { dm_sans, nunito_sans } from "./fonts";
 import Footer from "@/components/Footer";
 
+export const metadata = {
+  title: "Fig- Financing for Creators",
+  description: "Your creativity knows no boundary. Neither should the resources tobring it to life."
+}
 export default function RootLayout({ children }) {
   return (
     <html
