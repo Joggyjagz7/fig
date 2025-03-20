@@ -1,231 +1,202 @@
-"use client";
-import Image from "next/image";
-import { motion } from "framer-motion";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import { ChevronsRight } from "lucide-react";
+"use client"
+import { motion } from "framer-motion"
+import { ChevronsRight } from "lucide-react"
+import Image from "next/image"
+import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component"
 // import "react-vertical-timeline-component/style.min.css";
 // import { OpenSans } from "@/app/fonts";
 // import Image from "next/image";
 // import { motion } from "framer-motion";
 // import { AlignCenterVertical } from "lucide-react";
 export const variants = {
-  initial: {
-    opacity: 0,
-    y: 100,
-  },
-  animate: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      // delay: 1,
-      duration: 2,
-      type: "spring",
-      bounce: 0.5,
-    },
-  },
-};
+	initial: {
+		opacity: 0,
+		y: 100,
+	},
+	animate: {
+		opacity: 1,
+		y: 0,
+		transition: {
+			// delay: 1,
+			duration: 2,
+			type: "spring",
+			bounce: 0.5,
+		},
+	},
+}
 
 const Works = () => {
-  return (
-    <section className="w-full relative py-[50px]  md:py-[60px]   overflow-hidden">
-      <h2
-        className={`heading-2 text-primary-black text-start w-11/12 md:text-center lg:text-start lg:w-11/12 mx-auto`}
-      >
-        How It Works
-      </h2>
+	return (
+		<section className="w-full relative py-20  md:py-12 max-w-7xl mx-auto overflow-hidden">
+			<h2 className={`heading-2 text-primary-black text-start md:text-center lg:text-start mx-auto`}>How It Works</h2>
 
-      <div className="w-10/12 lg:min-h-[100vh]   mx-auto md:grid gap-[40px] items-center grid-cols-2">
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{
-            duration: 1,
-            delay: 1,
-            type: "spring",
-            bounce: 0.6,
-          }}
-          viewport={{ once: true, amount: 0.5 }}
-          className=" h-full w-full relative  hidden lg:block    lg:col-span-1"
-        >
-          <Image
-            alt="how we work demo"
-            src="/images/workss.svg"
-            fill
-            className="object-cover"
-          />
-        </motion.div>
+			<div className="w-full lg:min-h-[100vh] mx-auto md:grid gap-[40px] items-center grid-cols-2">
+				<motion.div
+					initial={{ opacity: 0, y: 50 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					transition={{
+						duration: 1,
+						delay: 1,
+						type: "spring",
+						bounce: 0.6,
+					}}
+					viewport={{ once: true, amount: 0.5 }}
+					className=" h-full w-full relative  hidden lg:block    lg:col-span-1">
+					<Image
+						alt="how we work demo"
+						src="/images/workss.svg"
+						fill
+						className="object-cover"
+					/>
+				</motion.div>
 
-        <div className=" mx-auto  lg:col-span-1 ">
-          {/* timeline container */}
-          <div className="">
-            <div className=" flex justify-between w-11/12 md:w-full lg:md:w-9/12 mx-auto border-l-2 border-l-primary-color relative">
-              <div className="w-[10%]"></div>
-              <div className="flex justify-center items-center  h-[50px] w-[50px] rounded-[50%]  text-primary-purple bg-white absolute -left-[25px]">
-                <motion.h3
-                  initial={{ opacity: 0, y: 50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{
-                    duration: 1,
-                    delay: 1,
-                    type: "spring",
-                    bounce: 0.6,
-                  }}
-                  viewport={{ once: true, amount: 0.5 }}
-                  className="font-[700] text-[20px]"
-                >
-                  01
-                </motion.h3>
-              </div>
-              <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{
-                  duration: 1,
-                  delay: 1,
-                  type: "spring",
-                  bounce: 0.6,
-                }}
-                viewport={{ once: true, amount: 0.5 }}
-                className="min-h-[100px] mb-5 pt-[10px] w-[89%] md:w-full"
-              >
-                <h3 className="heading-4 mb-2">Share Your Vision</h3>
-                <p className="paragraph text-primary-black">
-                  Share your idea, your project, and your dream. We’ll help you
-                  fund it.
-                </p>
-              </motion.div>
-            </div>
-            <div className=" flex justify-between w-11/12 md:w-full lg:md:w-9/12 mx-auto border-l-2 border-l-primary-color relative">
-              <div className="w-[10%]"></div>
-              <div className="flex justify-center items-center  h-[50px] w-[50px] rounded-[50%]  text-primary-purple bg-white absolute -left-[25px]">
-                <motion.h3
-                  initial={{ opacity: 0, y: 50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{
-                    duration: 1,
-                    delay: 1.5,
-                    type: "spring",
-                    bounce: 0.6,
-                  }}
-                  viewport={{ once: true, amount: 0.5 }}
-                  className="font-[700] text-[20px]"
-                >
-                  02
-                </motion.h3>
-              </div>
-              <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{
-                  duration: 1,
-                  delay: 1.5,
-                  type: "spring",
-                  bounce: 0.6,
-                }}
-                viewport={{ once: true, amount: 0.5 }}
-                className="min-h-[100px] mb-5 pt-[10px] w-[89%]"
-              >
-                <h3 className="heading-4 mb-2">Get Funded Fast</h3>
-                <p className="paragraph text-primary-black">
-                  Blink and you’ll have the funds. We move quickly. Once
-                  approved, the funds are in your account and ready to go.
-                </p>
-              </motion.div>
-            </div>
-            <div className=" flex justify-between w-11/12 md:w-full lg:md:w-9/12 mx-auto border-l-2 border-l-primary-color relative">
-              <div className="w-[10%]"></div>
-              <div className="flex justify-center items-center  h-[50px] w-[50px] rounded-[50%]  text-primary-purple bg-white absolute -left-[25px]">
-                <motion.h3
-                  initial={{ opacity: 0, y: 50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{
-                    duration: 1,
-                    delay: 2,
-                    type: "spring",
-                    bounce: 0.6,
-                  }}
-                  viewport={{ once: true, amount: 0.5 }}
-                  className="font-[700] text-[20px]"
-                >
-                  03
-                </motion.h3>
-              </div>
-              <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{
-                  duration: 1,
-                  delay: 2,
-                  type: "spring",
-                  bounce: 0.6,
-                }}
-                viewport={{ once: true, amount: 0.5 }}
-                className="min-h-[100px] mb-5 pt-[10px] w-[89%]"
-              >
-                <h3 className="heading-4 mb-2">
-                  Create Your Masterpiece
-                </h3>
-                <p className="paragraph text-primary-black">
-                  Shoot. Edit. Post. Let the world see your brilliance.
-                </p>
-              </motion.div>
-            </div>
-            <div className=" flex justify-between w-11/12 md:w-full lg:md:w-9/12 mx-auto  relative">
-              <div className="w-[10%]"></div>
-              <div className="flex justify-center items-center  h-[50px] w-[50px] rounded-[50%]  text-primary-purple bg-white absolute -left-[25px]">
-                <motion.h3
-                  initial={{ opacity: 0, y: 50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{
-                    duration: 1,
-                    delay: 2.5,
-                    type: "spring",
-                    bounce: 0.6,
-                  }}
-                  viewport={{ once: true, amount: 0.5 }}
-                  className="font-[700] text-[20px]"
-                >
-                  04
-                </motion.h3>
-              </div>
-              <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{
-                  duration: 1,
-                  delay: 2.5,
-                  type: "spring",
-                  bounce: 0.6,
-                }}
-                viewport={{ once: true, amount: 0.5 }}
-                className="min-h-[100px] pt-[10px] w-[89%]"
-              >
-                <h3 className="heading-4 mb-2">Repay On Your Terms</h3>
-                <p className="paragraph text-primary-black mb-10">
-                  Pay us back when the cash starts flowing. We work with
-                  flexible payment options.
-                </p>
-              </motion.div>
-            </div>
-            <div className="lg:w-[80%] md:w-full w-11/12 mx-auto ">
-              <button className="btn-colored gap-2 items-center flex">
-                Apply For Funding
-                {/* <ChevronsRight /> */}
-              </button>
-            </div>
-          </div>
+				<div className=" mx-auto  lg:col-span-1 ">
+					{/* timeline container */}
+					<div className="">
+						<div className=" flex justify-between w-11/12 md:w-full lg:md:w-9/12 mx-auto border-l-2 border-l-primary-color relative">
+							<div className="w-[10%]"></div>
+							<div className="flex justify-center items-center  h-[50px] w-[50px] rounded-[50%]  text-primary-purple bg-white absolute -left-[25px]">
+								<motion.h3
+									initial={{ opacity: 0, y: 50 }}
+									whileInView={{ opacity: 1, y: 0 }}
+									transition={{
+										duration: 1,
+										delay: 1,
+										type: "spring",
+										bounce: 0.6,
+									}}
+									viewport={{ once: true, amount: 0.5 }}
+									className="font-[700] text-[20px]">
+									01
+								</motion.h3>
+							</div>
+							<motion.div
+								initial={{ opacity: 0, y: 50 }}
+								whileInView={{ opacity: 1, y: 0 }}
+								transition={{
+									duration: 1,
+									delay: 1,
+									type: "spring",
+									bounce: 0.6,
+								}}
+								viewport={{ once: true, amount: 0.5 }}
+								className="min-h-[100px] mb-5 pt-[10px] w-[89%] md:w-full">
+								<h3 className="heading-4 mb-2">Share Your Vision</h3>
+								<p className="paragraph text-primary-black">Share your idea, your project, and your dream. We’ll help you fund it.</p>
+							</motion.div>
+						</div>
+						<div className=" flex justify-between w-11/12 md:w-full lg:md:w-9/12 mx-auto border-l-2 border-l-primary-color relative">
+							<div className="w-[10%]"></div>
+							<div className="flex justify-center items-center  h-[50px] w-[50px] rounded-[50%]  text-primary-purple bg-white absolute -left-[25px]">
+								<motion.h3
+									initial={{ opacity: 0, y: 50 }}
+									whileInView={{ opacity: 1, y: 0 }}
+									transition={{
+										duration: 1,
+										delay: 1.5,
+										type: "spring",
+										bounce: 0.6,
+									}}
+									viewport={{ once: true, amount: 0.5 }}
+									className="font-[700] text-[20px]">
+									02
+								</motion.h3>
+							</div>
+							<motion.div
+								initial={{ opacity: 0, y: 50 }}
+								whileInView={{ opacity: 1, y: 0 }}
+								transition={{
+									duration: 1,
+									delay: 1.5,
+									type: "spring",
+									bounce: 0.6,
+								}}
+								viewport={{ once: true, amount: 0.5 }}
+								className="min-h-[100px] mb-5 pt-[10px] w-[89%]">
+								<h3 className="heading-4 mb-2">Get Funded Fast</h3>
+								<p className="paragraph text-primary-black">Blink and you’ll have the funds. We move quickly. Once approved, the funds are in your account and ready to go.</p>
+							</motion.div>
+						</div>
+						<div className=" flex justify-between w-11/12 md:w-full lg:md:w-9/12 mx-auto border-l-2 border-l-primary-color relative">
+							<div className="w-[10%]"></div>
+							<div className="flex justify-center items-center  h-[50px] w-[50px] rounded-[50%]  text-primary-purple bg-white absolute -left-[25px]">
+								<motion.h3
+									initial={{ opacity: 0, y: 50 }}
+									whileInView={{ opacity: 1, y: 0 }}
+									transition={{
+										duration: 1,
+										delay: 2,
+										type: "spring",
+										bounce: 0.6,
+									}}
+									viewport={{ once: true, amount: 0.5 }}
+									className="font-[700] text-[20px]">
+									03
+								</motion.h3>
+							</div>
+							<motion.div
+								initial={{ opacity: 0, y: 50 }}
+								whileInView={{ opacity: 1, y: 0 }}
+								transition={{
+									duration: 1,
+									delay: 2,
+									type: "spring",
+									bounce: 0.6,
+								}}
+								viewport={{ once: true, amount: 0.5 }}
+								className="min-h-[100px] mb-5 pt-[10px] w-[89%]">
+								<h3 className="heading-4 mb-2">Create Your Masterpiece</h3>
+								<p className="paragraph text-primary-black">Shoot. Edit. Post. Let the world see your brilliance.</p>
+							</motion.div>
+						</div>
+						<div className=" flex justify-between w-11/12 md:w-full lg:md:w-9/12 mx-auto  relative">
+							<div className="w-[10%]"></div>
+							<div className="flex justify-center items-center  h-[50px] w-[50px] rounded-[50%]  text-primary-purple bg-white absolute -left-[25px]">
+								<motion.h3
+									initial={{ opacity: 0, y: 50 }}
+									whileInView={{ opacity: 1, y: 0 }}
+									transition={{
+										duration: 1,
+										delay: 2.5,
+										type: "spring",
+										bounce: 0.6,
+									}}
+									viewport={{ once: true, amount: 0.5 }}
+									className="font-[700] text-[20px]">
+									04
+								</motion.h3>
+							</div>
+							<motion.div
+								initial={{ opacity: 0, y: 50 }}
+								whileInView={{ opacity: 1, y: 0 }}
+								transition={{
+									duration: 1,
+									delay: 2.5,
+									type: "spring",
+									bounce: 0.6,
+								}}
+								viewport={{ once: true, amount: 0.5 }}
+								className="min-h-[100px] pt-[10px] w-[89%]">
+								<h3 className="heading-4 mb-2">Repay On Your Terms</h3>
+								<p className="paragraph text-primary-black mb-10">Pay us back when the cash starts flowing. We work with flexible payment options.</p>
+							</motion.div>
+						</div>
+						<div className="lg:w-[80%] md:w-full w-11/12 mx-auto ">
+							<button className="btn-colored gap-2 items-center flex">
+								Apply For Funding
+								{/* <ChevronsRight /> */}
+							</button>
+						</div>
+					</div>
 
-          {/* timeline ends here  */}
-        </div>
-      </div>
-    </section>
-  );
-};
+					{/* timeline ends here  */}
+				</div>
+			</div>
+		</section>
+	)
+}
 
-export default Works;
+export default Works
 // <div className="md:grid grid-cols-1 md:grid-cols-2 gap-[20px] o  md:w-9/12 md:mx-auto lg:gap-[30px]">
 //   {/* card 1 */}
 //   <motion.div

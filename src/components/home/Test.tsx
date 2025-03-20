@@ -17,7 +17,6 @@ const Choose = () => {
 				start: `top 50%`,
 				pin: true,
 				pinSpacing: false,
-				paused: true,
 			})
 		})
 	}, [])
