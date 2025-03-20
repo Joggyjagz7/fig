@@ -11,15 +11,15 @@ gsap.registerPlugin(useGSAP, ScrollTrigger)
 
 const Choose = () => {
 	useGSAP(() => {
-		gsap.utils.toArray(`.box`).forEach((box, idx) => {
-			ScrollTrigger.create({
-				trigger: box,
-				start: `top 50%`,
-				pin: true,
-				pinSpacing: false,
-				paused: true,
-			})
-		})
+		// gsap.utils.toArray(`.box`).forEach((box, idx) => {
+		// 	ScrollTrigger.create({
+		// 		trigger: box,
+		// 		start: `top 50%`,
+		// 		pin: true,
+		// 		pinSpacing: false,
+		// 		paused: true,
+		// 	})
+		// })
 	}, [])
 
 	return (
